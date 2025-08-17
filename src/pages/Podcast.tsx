@@ -108,7 +108,7 @@ Because sometimes, the most powerful things… are the ones we were told don’t
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-indigo-900 mb-6">Latest Episodes</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Discover our most recent conversations and insights from thought leaders across various industries.
+              Discover our most recent conversations!
             </p>
           </div>
           
