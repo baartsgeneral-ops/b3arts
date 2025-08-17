@@ -15,19 +15,19 @@ const Podcast = () => {
     },
     {
       id: 2,
-      title: 'Building Sustainable Communities',
+      title: 'Between Canvas and Calculations | with Isaac James',
       description: 'How to create lasting impact through community-driven initiatives and collaboration.',
       cover: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600',
-      duration: '38 min',
+      duration: '26 min',
       youtubeUrl: 'https://youtube.com/@zugoesofftopic?si=wwXYtEB3zn0u6pUh',
       spotifyUrl: 'https://open.spotify.com/show/4ehspgAgKiDJ6KumEWMTsI?si=QZlI34OjRByFAx4iz0-1fg'
     },
     {
       id: 3,
-      title: 'Leadership in the Modern Era',
+      title: 'Feeling Through Art – with Róisín Lyst',
       description: 'Insights from successful leaders on navigating challenges in today\'s business landscape.',
       cover: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
-      duration: '52 min',
+      duration: '24 min',
       youtubeUrl: 'https://youtube.com/@zugoesofftopic?si=wwXYtEB3zn0u6pUh',
       spotifyUrl: 'https://open.spotify.com/show/4ehspgAgKiDJ6KumEWMTsI?si=QZlI34OjRByFAx4iz0-1fg'
     },
