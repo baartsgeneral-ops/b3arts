@@ -14,7 +14,7 @@ const WorkshopDetail = () => {
       date: 'Upcoming, 2025',
       time: '9:00 AM - 5:00 PM',
       location: 'Location',
-      participants: x,
+      participants: 55,
       instructor: 'Upcoming',
       images: [
         'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -38,7 +38,7 @@ const WorkshopDetail = () => {
       date: 'Upcoming, 2025',
       time: '9:00 AM - 5:00 PM',
       location: 'Location',
-      participants: x,
+      participants: 55,
       instructor: 'Upcoming',
       images: [
         'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -62,7 +62,7 @@ const WorkshopDetail = () => {
       date: 'Upcoming, 2025',
       time: '9:00 AM - 5:00 PM',
       location: 'Location',
-      participants: x,
+      participants: 55,
       instructor: 'Upcoming',
       images: [
         'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -86,7 +86,7 @@ const WorkshopDetail = () => {
       date: 'Upcoming, 2025',
       time: '9:00 AM - 5:00 PM',
       location: 'Location',
-      participants: x,
+      participants: 55,
       instructor: 'Upcoming',
       images: [
         'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -110,7 +110,7 @@ const WorkshopDetail = () => {
       date: 'Upcoming, 2025',
       time: '9:00 AM - 5:00 PM',
       location: 'Location',
-      participants: x,
+      participants: 55,
       instructor: 'Upcoming',
       images: [
         'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -134,7 +134,7 @@ const WorkshopDetail = () => {
       date: 'Upcoming, 2025',
       time: '9:00 AM - 5:00 PM',
       location: 'Location',
-      participants: x,
+      participants: 55,
       instructor: 'Upcoming',
       images: [
         'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=800',
