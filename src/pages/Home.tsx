@@ -41,7 +41,7 @@ const Home = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-indigo-900 mb-4">Why Choose Us?</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We provide exceptional experiences through innovative approaches and dedicated community engagement.
+              At our core, we believe that every young creative mind deserves the right space to grow, connect, and shine. That’s why we built this platform — to give students in Egypt and the MENA region something truly different.
             </p>
           </div>
           
