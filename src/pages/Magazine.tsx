@@ -6,57 +6,57 @@ const Magazine = () => {
   const articles = [
     {
       id: 1,
-      title: 'The Art of Digital Transformation',
+      title: 'Upcoming',
       image: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600',
       artist: 'Sarah Johnson',
-      description: 'Exploring how businesses are reimagining their operations in the digital age.',
-      date: 'March 2025',
-      category: 'Technology'
+      description: 'Upcoming',
+      date: 'Upcoming 2025',
+      category: 'Upcoming'
     },
     {
       id: 2,
-      title: 'Sustainable Innovation in Modern Design',
-      image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600',
-      artist: 'Michael Chen',
-      description: 'How environmental consciousness is shaping contemporary design philosophy.',
-      date: 'March 2025',
-      category: 'Design'
+      title: 'Upcoming',
+      image: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600',
+      artist: 'Sarah Johnson',
+      description: 'Upcoming',
+      date: 'Upcoming 2025',
+      category: 'Upcoming'
     },
     {
       id: 3,
-      title: 'Community Building in Remote Work',
-      image: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600',
-      artist: 'Emma Davis',
-      description: 'Strategies for maintaining human connection in distributed teams.',
-      date: 'February 2025',
-      category: 'Management'
+      title: 'Upcoming',
+      image: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600',
+      artist: 'Sarah Johnson',
+      description: 'Upcoming',
+      date: 'Upcoming 2025',
+      category: 'Upcoming'
     },
     {
       id: 4,
-      title: 'The Future of Creative Expression',
-      image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600',
-      artist: 'Alex Rodriguez',
-      description: 'How technology is expanding the boundaries of artistic creation.',
-      date: 'February 2025',
-      category: 'Art'
+      title: 'Upcoming',
+      image: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600',
+      artist: 'Sarah Johnson',
+      description: 'Upcoming',
+      date: 'Upcoming 2025',
+      category: 'Upcoming'
     },
     {
       id: 5,
-      title: 'Data-Driven Decision Making',
-      image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
-      artist: 'David Kim',
-      description: 'Leveraging analytics to drive strategic business outcomes.',
-      date: 'January 2025',
-      category: 'Analytics'
+      title: 'Upcoming',
+      image: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600',
+      artist: 'Sarah Johnson',
+      description: 'Upcoming',
+      date: 'Upcoming 2025',
+      category: 'Upcoming'
     },
     {
       id: 6,
-      title: 'Mindful Leadership Practices',
-      image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600',
-      artist: 'Lisa Thompson',
-      description: 'Integrating mindfulness into effective leadership strategies.',
-      date: 'January 2025',
-      category: 'Leadership'
+      title: 'Upcoming',
+      image: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600',
+      artist: 'Sarah Johnson',
+      description: 'Upcoming',
+      date: 'Upcoming 2025',
+      category: 'Upcoming'
     }
   ];
 
