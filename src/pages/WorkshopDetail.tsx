@@ -235,6 +235,7 @@ const WorkshopDetail = () => {
       >
         Register Now
       </a>
+</div>
             </div>
             
             <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
