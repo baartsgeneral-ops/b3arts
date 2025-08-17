@@ -25,7 +25,7 @@ const Podcast = () => {
     {
       id: 3,
       title: 'Feeling Through Art – with Róisín Lyst',
-      description: 'Insights from successful leaders on navigating challenges in today\'s business landscape.',
+      description: 'In this very first episode of zu goes off topic, I sit down with artist Róisín Lyst to talk about what art truly means beyond school walls and technical rules.',
       cover: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
       duration: '24 min',
       youtubeUrl: 'https://youtube.com/@zugoesofftopic?si=wwXYtEB3zn0u6pUh',
