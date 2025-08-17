@@ -93,12 +93,16 @@ const Activities = () => {
           <p className="text-xl mb-8 opacity-90">
             Start your journey with us today and become part of a community that values growth and innovation.
           </p>
-          <Link
-            to="/registration"
-            className="inline-block bg-gold text-indigo-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-yellow-400 hover:transform hover:scale-105"
-          >
-            Register Now
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      <a
+        href="https://forms.gle/wRp1EBjwRZnLUeoDA"   
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-gold text-indigo-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-yellow-400 hover:transform hover:scale-105"
+      >
+        Register Now
+      </a>
+          </div>
         </div>
       </section>
     </div>
