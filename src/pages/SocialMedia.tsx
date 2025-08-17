@@ -7,7 +7,6 @@ const SocialMedia = () => {
     {
       name: 'Facebook',
       url: 'https://facebook.com/moderncorp',
-      followers: '12.5K',
       color: 'bg-gradient-to-r from-blue-600 to-blue-700',
       icon: '👥',
       description: 'Join our community discussions and stay updated with our latest news and events.'
@@ -15,7 +14,6 @@ const SocialMedia = () => {
     {
       name: 'Instagram',
       url: 'https://www.instagram.com/baarts2025/?utm_source=qr&r=nametag',
-      followers: '25.8K',
       color: 'bg-gradient-to-r from-purple-500 to-pink-500',
       icon: '📷',
       description: 'Visual stories, behind-the-scenes content, and inspiring moments from our journey.'
@@ -23,7 +21,6 @@ const SocialMedia = () => {
     {
       name: 'LinkedIn',
       url: 'https://www.linkedin.com/company/baarts',
-      followers: '18.2K',
       color: 'bg-gradient-to-r from-blue-700 to-blue-800',
       icon: '💼',
       description: 'Professional insights, industry updates, and networking opportunities.'
@@ -31,7 +28,6 @@ const SocialMedia = () => {
     {
       name: 'YouTube',
       url: 'https://youtube.com/moderncorp',
-      followers: '35.4K',
       color: 'bg-gradient-to-r from-red-500 to-red-600',
       icon: '📺',
       description: 'Educational videos, workshop recordings, and exclusive interviews.'
@@ -39,7 +35,6 @@ const SocialMedia = () => {
     {
       name: 'Twitter',
       url: 'https://twitter.com/moderncorp',
-      followers: '22.1K',
       color: 'bg-gradient-to-r from-sky-400 to-sky-500',
       icon: '🐦',
       description: 'Real-time updates, quick tips, and engaging conversations with our audience.'
@@ -47,7 +42,6 @@ const SocialMedia = () => {
     {
       name: 'TikTok',
       url: 'https://tiktok.com/@moderncorp',
-      followers: '45.7K',
       color: 'bg-gradient-to-r from-gray-800 to-gray-900',
       icon: '🎵',
       description: 'Creative short-form content, trends, and fun educational snippets.'
