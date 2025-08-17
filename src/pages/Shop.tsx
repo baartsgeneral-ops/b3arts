@@ -5,55 +5,55 @@ const Shop = () => {
   const products = [
     {
       id: 1,
-      title: 'Premium Course Bundle',
+      title: 'Upcoming',
       image: 'https://images.pexels.com/photos/256417/pexels-photo-256417.jpeg?auto=compress&cs=tinysrgb&w=600',
-      description: 'Complete learning package with exclusive resources and lifetime access.',
-      price: '$199',
+      description: 'Upcoming',
+      price: '0EGP',
       rating: 4.9,
       orderUrl: 'https://example.com/order/course-bundle'
     },
     {
       id: 2,
-      title: 'Workshop Materials Kit',
-      image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
-      description: 'Essential tools and materials for hands-on workshop experiences.',
-      price: '$79',
+      title: 'Upcoming',
+      image: 'https://images.pexels.com/photos/256417/pexels-photo-256417.jpeg?auto=compress&cs=tinysrgb&w=600',
+      description: 'Upcoming',
+      price: '0EGP',
       rating: 4.8,
       orderUrl: 'https://example.com/order/materials-kit'
     },
     {
       id: 3,
-      title: 'Digital Magazine Subscription',
-      image: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600',
-      description: 'Monthly digital magazine with exclusive content and insights.',
-      price: '$29/year',
+      title: 'Upcoming',
+      image: 'https://images.pexels.com/photos/256417/pexels-photo-256417.jpeg?auto=compress&cs=tinysrgb&w=600',
+      description: 'Upcoming',
+      price: '0EGP',
       rating: 4.7,
       orderUrl: 'https://example.com/order/magazine-sub'
     },
     {
       id: 4,
-      title: 'Community Membership',
-      image: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600',
-      description: 'Premium access to exclusive events and networking opportunities.',
-      price: '$149',
+      title: 'Upcoming',
+      image: 'https://images.pexels.com/photos/256417/pexels-photo-256417.jpeg?auto=compress&cs=tinysrgb&w=600',
+      description: 'Upcoming',
+      price: '0EGP',
       rating: 5.0,
       orderUrl: 'https://example.com/order/membership'
     },
     {
       id: 5,
-      title: 'Podcast Sponsor Package',
-      image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600',
-      description: 'Comprehensive marketing package for podcast sponsorship opportunities.',
-      price: '$299',
+      title: 'Upcoming',
+      image: 'https://images.pexels.com/photos/256417/pexels-photo-256417.jpeg?auto=compress&cs=tinysrgb&w=600',
+      description: 'Upcoming',
+      price: '0EGP',
       rating: 4.6,
       orderUrl: 'https://example.com/order/sponsor-package'
     },
     {
       id: 6,
-      title: 'Masterclass Series',
-      image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600',
-      description: 'Intensive masterclass series with industry experts and certificates.',
-      price: '$399',
+      title: 'Upcoming',
+      image: 'https://images.pexels.com/photos/256417/pexels-photo-256417.jpeg?auto=compress&cs=tinysrgb&w=600',
+      description: 'Upcoming',
+      price: '0EGP',
       rating: 4.9,
       orderUrl: 'https://example.com/order/masterclass'
     }
