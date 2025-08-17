@@ -170,22 +170,7 @@ Because sometimes, the most powerful things… are the ones we were told don’t
           <p className="text-xl mb-8 opacity-90">
             Subscribe to get notified when we release new episodes and exclusive behind-the-scenes content.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="mailto:subscribe@moderncorp.com?subject=Podcast Subscription"
-              className="bg-gold text-indigo-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-yellow-400 hover:transform hover:scale-105"
-            >
-              Subscribe Now
-            </a>
-            <a
-              
-              href="/registration"
-              className="border-2 border-gold text-gold px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-gold hover:text-indigo-900"
-              url:'https://youtube.com/@zugoesofftopic?si=wwXYtEB3zn0u6pUh'
-            >
-              Join Workshop
-            </a>
-          </div>
+         
         </div>
       </section>
 
