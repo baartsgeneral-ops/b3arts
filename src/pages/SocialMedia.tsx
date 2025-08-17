@@ -14,7 +14,7 @@ const SocialMedia = () => {
     },
     {
       name: 'Instagram',
-      url: 'https://instagram.com/moderncorp',
+      url: 'https://www.instagram.com/baarts2025/?utm_source=qr&r=nametag',
       followers: '25.8K',
       color: 'bg-gradient-to-r from-purple-500 to-pink-500',
       icon: '📷',
