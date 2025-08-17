@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Star, Users, Zap } from 'lucide-react';
-import pic10 from '../pic/10.png'; // لو Home.tsx في src/pages/ ، عدلي المسار حسب مكان الملف
+
 
 const Home = () => {
   return (
@@ -49,7 +49,7 @@ const Home = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                <img src={pic10} alt="The Ba(Bȝ)" className="w-full h-full object-contain" /> 
+                icon: ,  
                 title: 'The Ba(Bȝ)',
                 description: ' A bird with a human head, the Ba represents the soul and uniqueness of every person. For us, it stands for Unique Opportunity: every student has a distinct creative voice that deserves to be heard.'
               },
