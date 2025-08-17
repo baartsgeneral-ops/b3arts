@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Home, Info, Activity, ShoppingBag, UserPlus } from 'lucide-react';
 
-const Navigation = () => {
+const Navigation = () => { 
   const location = useLocation();
 
   const navItems = [
@@ -10,6 +10,7 @@ const Navigation = () => {
     { path: '/about', label: 'About Us', icon: Info },
     { path: '/activities', label: 'Activities', icon: Activity },
     { path: '/shop', label: 'Shop', icon: ShoppingBag },
+    { path: '/registration', label: 'Registration', icon: UserPlus },
   ];
 
   return (
