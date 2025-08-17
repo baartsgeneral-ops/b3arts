@@ -90,15 +90,15 @@ const Home = () => {
             Join our community today and unlock your potential with our comprehensive programs.
           </p>
           
-         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-           <a
-                 href="https://forms.gle/kHsqK3LmAbp5Es6R8"  
-                 target="_blank"             
-                 rel="noopener noreferrer" 
-    className="bg-gold text-indigo-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-yellow-400 hover:transform hover:scale-105"
-  >
-    Register Now
-  </a>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      <a
+        href="https://forms.gle/wRp1EBjwRZnLUeoDA"   // <-- حطي هنا اللينك الخارجي
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-gold text-indigo-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-yellow-400 hover:transform hover:scale-105"
+      >
+        Register Now
+      </a>
 </div>
             <Link
               to="/about"
