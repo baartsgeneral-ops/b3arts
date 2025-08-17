@@ -4,12 +4,11 @@ import { Play, ExternalLink, ArrowLeft } from 'lucide-react';
 
 const Podcast = () => {
   const episodes = [
-    import coverImg from './112.jpg';
     {
       id: 1,
       title: 'فنون جميلة|مع شهد الشاذلي',
       description: ' في الحلقة دي من zu goes off topic، بنفتح الباب على واحدة من أكتر الكليات اللي حواليها تساؤلات وخرافات: فنون جميلة.',
-      cover: '/112.jpg',
+      cover: './112.jpg',
       duration: '26 min',
       youtubeUrl: 'https://youtube.com/@zugoesofftopic?si=wwXYtEB3zn0u6pUh',
       spotifyUrl: 'https://open.spotify.com/show/4ehspgAgKiDJ6KumEWMTsI?si=QZlI34OjRByFAx4iz0-1fg'
