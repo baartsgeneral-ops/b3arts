@@ -13,7 +13,7 @@ const SocialMedia = () => {
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/ba3arts/?utm_source=qr&r=nametag',
+      url: 'https://www.instagram.com/ba3.arts/?utm_source=qr&r=nametag',
       color: 'bg-gradient-to-r from-purple-500 to-pink-500',
       icon: '📷',
       description: 'Visual stories, behind-the-scenes content, and inspiring moments from our journey.'
