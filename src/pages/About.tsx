@@ -101,7 +101,7 @@ const About = () => {
                 <p className="text-gold font-semibold mb-4">{member.role}</p>
                 <p className="text-gray-600 leading-relaxed">{member.description}</p>
               </div>
-            ))}
+
           </div>
         </div>
       </section>
