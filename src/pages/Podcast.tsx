@@ -26,7 +26,7 @@ const Podcast = () => {
       id: 3,
       title: 'Feeling Through Art – with Róisín Lyst',
       description: 'In this very first episode of zu goes off topic, I sit down with artist Róisín Lyst to talk about what art truly means beyond school walls and technical rules.',
-      cover: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
+      cover: '/src/pic/132.jpg',
       duration: '24 min',
       youtubeUrl: 'https://youtube.com/@zugoesofftopic?si=wwXYtEB3zn0u6pUh',
       spotifyUrl: 'https://open.spotify.com/show/4ehspgAgKiDJ6KumEWMTsI?si=QZlI34OjRByFAx4iz0-1fg'
