@@ -89,6 +89,7 @@ const Home = () => {
           <p className="text-xl mb-8 opacity-90">
             Join our community today and unlock your potential with our comprehensive programs.
           </p>
+          
          <div className="flex flex-col sm:flex-row gap-4 justify-center">
   <a
     href="https://forms.gle/kHsqK3LmAbp5Es6R8"   // <-- هنا حطي اللينك اللي عايزاه
