@@ -50,7 +50,7 @@ const Workshops = () => {
       image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
       description: 'Upcoming',
       participants: Upcoming,
-      date: 'Upcoming, 2025'
+      date: 'Upcoming, 2025''
     }
   ];
 
