@@ -47,13 +47,17 @@ const About = () => {
                   className="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl hover:bg-indigo-50 transition-all duration-300 animate-slide-up"
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
-                  <div className="w-12 h-12 bg-indigo-900 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <img 
-                     src="/src/pic/1.jpg"
-                      alt={member.name} 
-                      className="w-full h-full object-cover"
+                  import pic from "../pic/1.jpg";
+
+...
+
+<div className="w-12 h-12 bg-indigo-900 rounded-lg flex items-center justify-center flex-shrink-0">
+  <img 
+    src={pic1}
+    alt={member.name} 
+    className="w-full h-full object-cover"
   />
-                  </div>
+</div>
                   <div>
                     <h3 className="text-xl font-semibold text-indigo-900 mb-2">{title}</h3>
                     <p className="text-gray-600">{text}</p>
