@@ -8,8 +8,8 @@ const Workshops = () => {
       id: 1,
       title: 'upcoming',
       image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
-      description: 'Learn advanced digital marketing strategies that drive real results.',
-      participants: 150,
+      description: 'upcoming',
+      participants: upcoming,
       date: 'March 15-16, 2025'
     },
     {
