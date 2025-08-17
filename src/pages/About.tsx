@@ -74,7 +74,7 @@ const About = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 justify-center">
             {teamMembers.map((member, index) => (
               <div 
                 key={member.name}
