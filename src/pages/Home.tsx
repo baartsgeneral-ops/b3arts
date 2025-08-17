@@ -15,7 +15,7 @@ const Home = () => {
               <span className="text-gold block">Bȝ Arts</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed opacity-90">
-              Discover innovative solutions, connect with like-minded individuals, and transform your journey with our comprehensive platform.
+             innovative solutions, connect with like-minded individuals, and transform your journey with our comprehensive platform.
             </p>
             <Link
               to="/activities"
