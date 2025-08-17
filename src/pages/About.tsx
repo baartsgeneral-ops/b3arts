@@ -13,6 +13,7 @@ const About = () => {
       role: 'Upcoming',
       description: 'Upcoming'
     },
+    
     {
       name: 'Upcoming',
       role: 'Upcoming',
