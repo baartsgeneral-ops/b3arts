@@ -3,18 +3,12 @@ import { Users, Target, Heart } from 'lucide-react';
 
 const About = () => {
   const teamMembers = [
-    {
-      name: 'Upcoming',
-      role: 'Upcoming',
-    },
+
     {
       name: 'Sama Hassan',
       role: 'Founder & CEO',
     },
-    {
-      name: 'Upcoming',
-      role: 'Upcoming',
-    }
+
   ];
 
   return (
