@@ -134,7 +134,7 @@ const Shop = () => {
             Contact our team for personalized packages and enterprise solutions tailored to your specific needs.
           </p>
           <a
-            href="https://www.instagram.com/ba3.arts/"
+            href="https://www.instagram.com/ba3.arts"
             className="inline-block bg-gold text-indigo-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-yellow-400 hover:transform hover:scale-105"
           >
            Contact us
