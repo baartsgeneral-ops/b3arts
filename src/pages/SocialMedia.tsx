@@ -42,7 +42,7 @@ const SocialMedia = () => {
     {
       name: 'Podcast Spotify',
       url: 'https://open.spotify.com/show/4ehspgAgKiDJ6KumEWMTsI?si=QZlI34OjRByFAx4iz0-1fg',
-      color: '#1DB954',
+      color: 'bg-gradient-to-r from-[#1DB954] to-[#191414] text-white p-6 rounded-xl',
       icon: '🎵',
       description: 'Creative short-form content, trends, and fun educational snippets.'
     }
