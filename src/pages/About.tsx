@@ -81,7 +81,7 @@ const About = () => {
                 className="text-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 animate-slide-up"
                 
                 style={{ animationDelay: `${index * 0.2}s` }}
-                <div className="flex justify-center items-center min-h-screen"></div>
+              
               >
                 <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden">
   <img 
