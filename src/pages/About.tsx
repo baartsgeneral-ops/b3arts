@@ -93,7 +93,7 @@ const About = () => {
                 <h3 className="text-2xl font-bold text-indigo-900 mb-2">
   {member.name === "Sama Hassan" ? (
     <a 
-      href="www.linkedin.com/in/sama-h-0218362b3"   // هنا تحطي اللينك اللي عايزة يفتح
+      href="https://www.linkedin.com/in/sama-h-0218362b3/"   // هنا تحطي اللينك اللي عايزة يفتح
       target="_blank" 
       rel="noopener noreferrer"
       className="hover:underline text-indigo-900"
