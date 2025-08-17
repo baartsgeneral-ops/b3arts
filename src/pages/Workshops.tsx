@@ -82,9 +82,9 @@ const Workshops = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             {[
-              { icon: Users, number: '500+', label: 'Participants Trained' },
-              { icon: Calendar, number: '24', label: 'Workshops This Year' },
-              { icon: Award, number: '98%', label: 'Satisfaction Rate' }
+              { icon: Users, number: 'Upcoming', label: 'Participants Trained' },
+              { icon: Calendar, number: 'Upcoming', label: 'Workshops This Year' },
+              { icon: Award, number: 'Upcoming', label: 'Satisfaction Rate' }
             ].map(({ icon: Icon, number, label }, index) => (
               <div 
                 key={label}
