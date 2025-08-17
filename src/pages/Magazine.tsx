@@ -204,7 +204,7 @@ const Magazine = () => {
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-6">Stay Updated</h2>
           <p className="text-xl mb-8 opacity-90">
-            Subscribe to our newsletter and never miss the latest articles, insights, and creative content.
+            With our newsletter and never miss the latest articles, insights, and creative content.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
           
