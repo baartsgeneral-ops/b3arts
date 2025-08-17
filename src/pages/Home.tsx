@@ -94,11 +94,12 @@ const Home = () => {
       <a
         href="https://forms.gle/wRp1EBjwRZnLUeoDA"   
         target="_blank"
+        rel="noopener noreferrer"
         className="bg-gold text-indigo-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-yellow-400 hover:transform hover:scale-105"
       >
         Register Now
       </a>
-</div>
+
             <Link
               to="/about"
               className="border-2 border-gold text-gold px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-gold hover:text-indigo-900"
