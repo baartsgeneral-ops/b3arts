@@ -36,10 +36,10 @@ const About = () => {
             <div className="animate-slide-up">
               <h2 className="text-4xl font-bold text-indigo-900 mb-6">Our Mission</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                We believe in the power of connection and continuous learning. Our platform serves as a bridge between innovative ideas and practical implementation, fostering growth in individuals and communities alike.
+                We believe that art is not an accessory to education, but a foundation for imagination, identity, and innovation. Our mission is to create a platform where high school students in Egypt and the MENA region can express their individuality, discover the value of their creativity, and understand how art connects with the wider world. We want every young person to see that their artistic voice matters — that it has the power to inspire, to challenge, and to transform.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Through our diverse range of activities—from podcasts and workshops to social media engagement and publications—we create opportunities for meaningful dialogue and skill development.
+                At the same time, our mission is to build a supportive community that encourages collaboration and growth. Through programs, mentorship, and opportunities for recognition, we give students the tools to integrate art with science, technology, and society. By doing so, we nurture a generation of young creatives who are not only artists but changemakers — ready to shape the future with imagination, courage, and purpose.
               </p>
             </div>
             
