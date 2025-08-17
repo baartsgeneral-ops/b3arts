@@ -339,9 +339,9 @@ const WorkshopDetail = () => {
         rel="noopener noreferrer"
         className="bg-gold text-indigo-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-yellow-400 hover:transform hover:scale-105"
       >
-
+   Register for the next Workshop
       </a>
-              Register for the next Workshop
+              
             
             <Link
               to="/workshops"
