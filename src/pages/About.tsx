@@ -44,7 +44,7 @@ const About = () => {
                 { icon: Users, title: 'Our Impact', text: 'Our impact lies in changing the way young people see art — not as something to be pushed aside, but as a powerful force that belongs at the heart of everything they do. We create spaces where students can connect their artistic expression with science, technology, and everyday life, proving that creativity is not separate from knowledge but a vital part of it. In doing so, we empower young creatives to value their art, integrate it with other fields, and use it as a tool for growth and change.' }
               ].map(({ icon: Icon, title, text }, index) => (
                 <div 
-                  key={title}
+                  key={title} 
                   className="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl hover:bg-indigo-50 transition-all duration-300 animate-slide-up"
                   style={{ animationDelay: `${index * 0.2}s` }}
                   
