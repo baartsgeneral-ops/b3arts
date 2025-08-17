@@ -177,7 +177,7 @@ const Magazine = () => {
                       <User size={32} className="text-gold" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-indigo-900">Sarah Johnson</h3>
+                      <h3 className="text-xl font-bold text-indigo-900">Upcoming</h3>
                       <p className="text-gray-600">Senior Digital Strategist</p>
                     </div>
                   </div>
