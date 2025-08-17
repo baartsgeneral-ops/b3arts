@@ -7,11 +7,16 @@ const About = () => {
       name: 'Sarah Johnson',
       role: 'Founder & CEO',
       description: 'Visionary leader with 10+ years in digital innovation.'
-    }, 
+    },
     {
       name: 'Upcoming',
       role: 'Upcoming',
       description: 'Upcoming'
+    },
+    {
+      name: 'Upcoming',
+      role: 'Upcoming',
+      description: 'Expert in building engaged and thriving communitie.'
     }
   ];
 
