@@ -11,12 +11,12 @@ const About = () => {
     {
       name: 'Upcoming',
       role: 'Upcoming',
-      description: 'Award-winning designer passionate about user experience.'
+      description: 'Upcoming'
     },
     {
       name: 'Upcoming',
       role: 'Upcoming',
-      description: 'Expert in building engaged and thriving communities.'
+      description: 'Upcoming'
     }
   ];
 
