@@ -6,7 +6,7 @@ const Podcast = () => {
   const episodes = [
     {
       id: 1,
-      title: 'The Future of Digital Innovation',
+      title: 'فنون جميلة|مع شهد الشاذلي',
       description: 'Exploring emerging technologies and their impact on society with leading experts.',
       cover: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600',
       duration: '45 min',
