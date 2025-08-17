@@ -8,7 +8,7 @@ const About = () => {
       role: 'Upcoming',
     },
     {
-      member.name === "Sama Hassan",
+      name: "Sama Hassan",
       role: 'Founder & CEO',
     },
     {
