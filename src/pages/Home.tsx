@@ -92,9 +92,9 @@ const Home = () => {
           
          <div className="flex flex-col sm:flex-row gap-4 justify-center">
            <a
-    href="https://forms.gle/kHsqK3LmAbp5Es6R8"   // <-- هنا حطي اللينك اللي عايزاه
-    target="_blank"              // يفتح في تاب جديد
-    rel="noopener noreferrer"    // أمان لللينك الخارجي
+    href="https://forms.gle/kHsqK3LmAbp5Es6R8"  
+    target="_blank"             
+    rel="noopener noreferrer" 
     className="bg-gold text-indigo-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-yellow-400 hover:transform hover:scale-105"
   >
     Register Now
