@@ -47,10 +47,11 @@ const About = () => {
                   key={title}
                   className="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl hover:bg-indigo-50 transition-all duration-300 animate-slide-up"
                   style={{ animationDelay: `${index * 0.2}s` }}
-                  <div className="flex justify-center items-center min-h-screen"></div>
+                  
                 >
                   <div className="w-12 h-12 bg-indigo-900 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Icon size={24} className="text-gold" />
+                    <div className="flex justify-center items-center min-h-screen"></div>
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-indigo-900 mb-2">{title}</h3>
