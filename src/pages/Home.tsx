@@ -54,8 +54,8 @@ const Home = () => {
               },
               {
                 icon: Users,
-                title: 'Strong Community',
-                description: 'Join thousands of members who share your passion and drive for success.'
+                title: 'Supportive Community',
+                description: 'Join a safe, inspiring environment where young talents collaborate, learn, and get recognized.'
               },
               {
                 icon: Zap,
