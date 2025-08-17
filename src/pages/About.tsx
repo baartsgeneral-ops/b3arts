@@ -93,7 +93,7 @@ const About = () => {
       />
   ) : (
     <Users size={40} className="text-gold" />
-  )}
+  )
 </div>
                 <h3 className="text-2xl font-bold text-indigo-900 mb-2">{member.name}</h3>
                 <p className="text-gold font-semibold mb-4">{member.role}</p>
