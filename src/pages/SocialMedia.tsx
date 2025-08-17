@@ -36,6 +36,22 @@ const SocialMedia = () => {
       icon: '📺',
       description: 'Educational videos, workshop recordings, and exclusive interviews.'
     },
+    {
+      name: 'Twitter',
+      url: 'https://twitter.com/moderncorp',
+      followers: '22.1K',
+      color: 'bg-gradient-to-r from-sky-400 to-sky-500',
+      icon: '🐦',
+      description: 'Real-time updates, quick tips, and engaging conversations with our audience.'
+    },
+    {
+      name: 'TikTok',
+      url: 'https://tiktok.com/@moderncorp',
+      followers: '45.7K',
+      color: 'bg-gradient-to-r from-gray-800 to-gray-900',
+      icon: '🎵',
+      description: 'Creative short-form content, trends, and fun educational snippets.'
+    }
   ];
 
   const recentPosts = [
