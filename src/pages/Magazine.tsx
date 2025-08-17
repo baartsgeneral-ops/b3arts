@@ -178,11 +178,11 @@ const Magazine = () => {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-indigo-900">Upcoming</h3>
-                      <p className="text-gray-600">Senior Digital Strategist</p>
+                      <p className="text-gray-600">Upcoming</p>
                     </div>
                   </div>
                   <p className="text-gray-600">
-                    "Writing for this magazine has been an incredible journey of sharing knowledge and connecting with like-minded professionals."
+                    "Upcoming Upcoming Upcoming"
                   </p>
                 </div>
               </div>
