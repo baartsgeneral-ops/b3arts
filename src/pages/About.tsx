@@ -65,41 +65,36 @@ const About = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-gray-50 flex justify-center items-center min-h-screen">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-indigo-900 mb-6">Meet Our Team</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              The passionate individuals behind our success, dedicated to bringing you the best experience possible.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8 justify-center">
-            {teamMembers.map((member, index) => (
-              <div 
-                key={member.name}
-                className="text-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 animate-slide-up" 
-                
-                style={{ animationDelay: `${index * 0.2}s` }}
-              
-              >
-                <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden">
-  <img 
-    src="/src/pic/1.jpg"   // <-- هنا حطي اسم صورتك أو لينك الصورة
-    alt={member.name} 
-    className="w-full h-full object-cover"
-  />
-</div>
-                <h3 className="text-2xl font-bold text-indigo-900 mb-2">{member.name}</h3>
-                <p className="text-gold font-semibold mb-4">{member.role}</p>
-                <p className="text-gray-600 leading-relaxed">{member.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <section className="flex justify-center items-center min-h-screen bg-gray-50">
+  <div className="max-w-4xl w-full px-4">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-bold text-indigo-900 mb-6">Meet Our Team</h2>
+      <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+        The passionate individuals behind our success, dedicated to bringing you the best experience possible.
+      </p>
     </div>
-  );
-};
+    
+    <div className="grid md:grid-cols-2 gap-10 justify-center">
+      {teamMembers.map((member, index) => (
+        <div 
+          key={member.name}
+          className="text-center bg-white p-10 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-slide-up w-80 mx-auto"
+          style={{ animationDelay: `${index * 0.2}s` }}
+        >
+          <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden">
+            <img 
+              src="/src/pic/1.jpg"   // <-- حطي صورتك
+              alt={member.name} 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <h3 className="text-xl font-bold text-indigo-900 mb-2">{member.name}</h3>
+          <p className="text-base text-gold font-semibold mb-4">{member.role}</p>
+          <p className="text-sm text-gray-600 leading-relaxed">{member.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
 export default About;
