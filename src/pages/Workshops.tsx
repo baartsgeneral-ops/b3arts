@@ -9,7 +9,7 @@ const Workshops = () => {
       title: 'upcoming',
       image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
       description: 'upcoming',
-      participants: upcoming,
+      participants: 50,
       date: 'March 15-16, 2025'
     },
     {
