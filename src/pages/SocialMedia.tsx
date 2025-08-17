@@ -27,7 +27,7 @@ const SocialMedia = () => {
     },
     {
       name: 'YouTube',
-      url: 'https://youtube.com/moderncorp',
+      url: 'https://www.youtube.com/@ba3arts',
       color: 'bg-gradient-to-r from-red-500 to-red-600',
       icon: '📺',
       description: 'Educational videos, workshop recordings, and exclusive interviews.'
