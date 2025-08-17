@@ -112,7 +112,7 @@ const Workshops = () => {
                     className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute top-4 right-4 bg-indigo-900 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                    {workshop.participants} enrolled
+                    {workshop.participants} Apply Now
                   </div>
                 </div>
                 
