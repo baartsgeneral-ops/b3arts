@@ -16,7 +16,7 @@ const Podcast = () => {
     {
       id: 2,
       title: 'Between Canvas and Calculations | with Isaac James',
-      description: 'How to create lasting impact through community-driven initiatives and collaboration.',
+      description: 'What’s it like to study art — while also studying mathematics? In this episode, I talk with Isaac James, a student at Washington and Lee University, who’s living in both worlds.',
       cover: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600',
       duration: '26 min',
       youtubeUrl: 'https://youtube.com/@zugoesofftopic?si=wwXYtEB3zn0u6pUh',
