@@ -9,7 +9,7 @@ const About = () => {
       description: 'Upcoming'
     },
     {
-      name: 'Upcoming',
+      name: 'Sama Hassan',
       role: 'Founder & CEO',
       description: 'Upcoming'
     },
