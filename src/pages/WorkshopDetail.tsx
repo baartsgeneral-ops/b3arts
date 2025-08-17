@@ -23,12 +23,12 @@ const WorkshopDetail = () => {
         'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800'
       ],
       highlights: [
-        'Advanced SEO and SEM strategies',
-        'Social media marketing mastery',
-        'Content creation and storytelling',
-        'Analytics and performance tracking',
-        'Email marketing automation',
-        'Paid advertising optimization'
+        'Upcoming',
+        'Upcoming',
+        'Upcoming',
+        'Upcoming',
+        'Upcoming',
+        'Upcoming'
       ]
     },
     '2': {
@@ -47,12 +47,12 @@ const WorkshopDetail = () => {
         'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800'
       ],
       highlights: [
-        'Leadership styles and adaptability',
-        'Effective communication techniques',
-        'Team building and motivation',
-        'Conflict resolution strategies',
-        'Decision-making frameworks',
-        'Change management principles'
+        'Upcoming',
+        'Upcoming',
+        'Upcoming',
+        'Upcoming',
+        'Upcoming',
+        'Upcoming'
       ]
     },
     '3': {
@@ -71,12 +71,12 @@ const WorkshopDetail = () => {
         'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800'
       ],
       highlights: [
-        'Design principles and theory',
-        'Color psychology and application',
-        'Typography and layout design',
-        'Digital design tools mastery',
-        'Brand identity development',
-        'Portfolio creation techniques'
+        'Upcoming',
+        'Upcoming',
+        'Upcoming',
+        'Upcoming',
+        'Upcoming',
+        'Upcoming'
       ]
     },
     '4': {
@@ -95,12 +95,12 @@ const WorkshopDetail = () => {
         'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800'
       ],
       highlights: [
-        'Statistical analysis fundamentals',
-        'Data visualization techniques',
-        'Excel and Google Sheets mastery',
-        'Introduction to Python/R',
-        'Dashboard creation',
-        'Predictive analytics basics'
+        'Upcoming',
+        'Upcoming',
+        'Upcoming',
+        'Upcoming',
+        'Upcoming',
+        'Upcoming'
       ]
     },
     '5': {
@@ -119,12 +119,12 @@ const WorkshopDetail = () => {
         'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800'
       ],
       highlights: [
-        'Platform-specific strategies',
-        'Content planning and creation',
-        'Community management',
-        'Influencer partnerships',
-        'Social media advertising',
-        'Performance measurement'
+        'Upcoming',
+        'Upcoming',
+        'Upcoming',
+        'Upcoming',
+        'Upcoming',
+        'Upcoming'
       ]
     },
     '6': {
@@ -143,12 +143,12 @@ const WorkshopDetail = () => {
         'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800'
       ],
       highlights: [
-        'Storytelling fundamentals',
-        'Content strategy development',
-        'Video and podcast creation',
-        'SEO content optimization',
-        'Content distribution strategies',
-        'Measuring content performance'
+        'Upcoming',
+        'Upcoming',
+        'Upcoming',
+        'Upcoming',
+        'Upcoming',
+        'Upcoming'
       ]
     }
   };
