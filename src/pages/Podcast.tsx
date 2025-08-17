@@ -4,6 +4,7 @@ import { Play, ExternalLink, ArrowLeft } from 'lucide-react';
 
 const Podcast = () => {
   const episodes = [
+    import coverImg from './112.jpg';
     {
       id: 1,
       title: 'فنون جميلة|مع شهد الشاذلي',
