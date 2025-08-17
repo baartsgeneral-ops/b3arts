@@ -6,7 +6,7 @@ const Workshops = () => {
   const workshops = [
     {
       id: 1,
-      title: 'Digital Marketing Mastery',
+      title: 'upcoming',
       image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
       description: 'Learn advanced digital marketing strategies that drive real results.',
       participants: 150,
