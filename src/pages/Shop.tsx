@@ -108,7 +108,7 @@ const Shop = () => {
                   <p className="text-gray-600 mb-6 leading-relaxed">{product.description}</p>
                   
                   <a
-                    href={product.orderUrl}
+                    href="https://forms.gle/1cVoK9Gacf7v3xZn8"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full bg-indigo-900 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-gold hover:text-indigo-900 flex items-center justify-center space-x-2 group"
