@@ -7,6 +7,7 @@ const About = () => {
       name: 'Sama Hassan',
       role: 'Founder & CEO',
     },
+    <div className="flex justify-center items-center min-h-screen"></div>
   ];
 
   return (
