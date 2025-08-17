@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Star, Users, Zap } from 'lucide-react';
-import pic10 from '../pic/10.png';
+import pic10 from 'src/pic/10.png';
 
 const Home = () => {
   return (
