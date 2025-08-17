@@ -2,12 +2,13 @@ import React from 'react';
 import { Users, Target, Heart } from 'lucide-react';
 
 const About = () => {
+  <div className="flex justify-center items-center min-h-screen"></div>
   const teamMembers = [
     {
       name: 'Sama Hassan',
       role: 'Founder & CEO',
     },
-    <div className="flex justify-center items-center min-h-screen"></div>
+    
   ];
 
   return (
