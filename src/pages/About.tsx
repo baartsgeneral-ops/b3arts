@@ -53,7 +53,6 @@ const About = () => {
     alt={member.name} 
     className="w-full h-full object-cover"
   />
-</div>
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-indigo-900 mb-2">{title}</h3>
