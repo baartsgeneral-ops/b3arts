@@ -212,9 +212,7 @@ const Magazine = () => {
               placeholder="Enter your email"
               className="flex-1 px-6 py-3 rounded-full text-indigo-900 font-medium focus:outline-none focus:ring-2 focus:ring-gold"
             />
-            <button className="bg-gold text-indigo-900 px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-yellow-400 hover:transform hover:scale-105">
-              Subscribe
-            </button>
+
           </div>
         </div>
       </section>
