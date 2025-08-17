@@ -68,7 +68,6 @@ const About = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="flex justify-center items-center min-h-screen"></div>
             <h2 className="text-4xl font-bold text-indigo-900 mb-6">Meet Our Team</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               The passionate individuals behind our success, dedicated to bringing you the best experience possible.
@@ -80,6 +79,7 @@ const About = () => {
               <div 
                 key={member.name}
                 className="text-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 animate-slide-up"
+                <div className="flex justify-center items-center min-h-screen"></div>
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden">
