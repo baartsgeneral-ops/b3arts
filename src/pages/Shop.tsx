@@ -137,7 +137,7 @@ const Shop = () => {
             href="mailto:sales@moderncorp.com"
             className="inline-block bg-gold text-indigo-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-yellow-400 hover:transform hover:scale-105"
           >
-            Contact Us
+            Contact us
           </a>
         </div>
       </section>
