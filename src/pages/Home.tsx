@@ -39,9 +39,9 @@ const Home = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-indigo-900 mb-4">Why Choose Us?</h2>
+            <h2 className="text-4xl font-bold text-indigo-900 mb-4">Our Identity</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              At our core, we believe that every young creative mind deserves the right space to grow, connect, and shine. That’s why we built this platform — to give students in Egypt and the MENA region something truly different.
+              Inspired by the timeless spirit of Ancient Egypt, our identity is built on three powerful symbols. Together, they define who we are and what we stand for.
             </p>
           </div>
           
