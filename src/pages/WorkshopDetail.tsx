@@ -332,12 +332,18 @@ const WorkshopDetail = () => {
           <p className="text-xl mb-8 opacity-90">
             Secure your spot now and take the next step in your professional development journey.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/registration"
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      <a
+        href="https://forms.gle/wRp1EBjwRZnLUeoDA"   
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-gold text-indigo-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-yellow-400 hover:transform hover:scale-105"
+      >
+        Register Now
+      </a>
               className="bg-gold text-indigo-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-yellow-400 hover:transform hover:scale-105"
             >
-              Register for This Workshop
+              Register for the next Workshop
             </Link>
             <Link
               to="/workshops"
