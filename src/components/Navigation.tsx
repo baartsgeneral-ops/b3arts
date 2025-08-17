@@ -2,9 +2,9 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Home, Info, Activity, ShoppingBag, UserPlus } from 'lucide-react';
 
-const Navigation = () => { 
+const Navigation = () => {
   const location = useLocation();
-
+ 
   const navItems = [
     { path: '/', label: 'Home', icon: Home },
     { path: '/about', label: 'About Us', icon: Info },
@@ -18,12 +18,8 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="">
-        <img 
-  src="/src/pic/logo.png" 
-  alt="Logo" 
-  className="h-16 w-auto"
-/>
+            <div className="w-8 h-8 bg-indigo-900 rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-sm">S</span>
             </div>
             <span className="text-indigo-900 font-bold text-xl">Bȝ Arts</span>
           </Link>
