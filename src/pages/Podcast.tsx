@@ -31,15 +31,7 @@ const Podcast = () => {
       youtubeUrl: 'https://youtube.com/@zugoesofftopic?si=wwXYtEB3zn0u6pUh',
       spotifyUrl: 'https://open.spotify.com/show/4ehspgAgKiDJ6KumEWMTsI?si=QZlI34OjRByFAx4iz0-1fg'
     },
-    {
-      id: 4,
-      title: 'Creative Problem Solving',
-      description: 'Techniques and strategies for approaching complex problems with innovative solutions.',
-      cover: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600',
-      duration: '41 min',
-      youtubeUrl: 'https://youtube.com/@zugoesofftopic?si=wwXYtEB3zn0u6pUh',
-      spotifyUrl: 'https://open.spotify.com/show/4ehspgAgKiDJ6KumEWMTsI?si=QZlI34OjRByFAx4iz0-1fg'
-    }
+
   ];
 
   const platforms = [
