@@ -11,8 +11,8 @@ const Home = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center animate-slide-up">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Welcome to the
-              <span className="text-gold block">Future</span>
+              Welcome to 
+              <span className="text-gold block">Bȝ Arts</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed opacity-90">
               Discover innovative solutions, connect with like-minded individuals, and transform your journey with our comprehensive platform.
