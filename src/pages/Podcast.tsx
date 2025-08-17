@@ -9,7 +9,7 @@ const Podcast = () => {
       title: 'فنون جميلة|مع شهد الشاذلي',
       description: 'Exploring emerging technologies and their impact on society with leading experts.',
       cover: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600',
-      duration: '45 min',
+      duration: '26 min',
       youtubeUrl: 'https://youtube.com/@zugoesofftopic?si=wwXYtEB3zn0u6pUh',
       spotifyUrl: 'https://open.spotify.com/show/4ehspgAgKiDJ6KumEWMTsI?si=QZlI34OjRByFAx4iz0-1fg'
     },
