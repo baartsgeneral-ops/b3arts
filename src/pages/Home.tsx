@@ -100,12 +100,16 @@ const Home = () => {
         Register Now
       </a>
 
-            <Link
-              to="/about"
-              className="border-2 border-gold text-gold px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-gold hover:text-indigo-900"
-            >
-              Learn More
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      <a
+        href="https://linktr.ee/b3arts"   
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-gold text-indigo-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-yellow-400 hover:transform hover:scale-105"
+      >
+        Contact Us
+      </a>
+            </div>
           </div>
         </div>
       </section>
