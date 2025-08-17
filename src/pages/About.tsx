@@ -87,6 +87,7 @@ const About = () => {
               >
                 <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden">
  <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden flex items-center justify-center bg-gradient-to-br from-indigo-900 to-indigo-700">
+   
   {member.name === "Sama Hassan" ? (
     <img 
       src="/src/pic/112.jpg"   // ← حطي مكان الصورة هنا
