@@ -332,6 +332,7 @@ const WorkshopDetail = () => {
           <p className="text-xl mb-8 opacity-90">
             Secure your spot now and take the next step in your professional development journey.
           </p>
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
       <a
         href="https://forms.gle/wRp1EBjwRZnLUeoDA"   
