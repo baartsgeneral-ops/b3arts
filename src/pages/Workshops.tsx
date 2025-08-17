@@ -112,7 +112,7 @@ const Workshops = () => {
                     className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute top-4 right-4 bg-indigo-900 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                    {workshop.participants} Apply Now
+                    {workshop.participants} enrolled
                   </div>
                 </div>
                 
@@ -167,8 +167,7 @@ const Workshops = () => {
               to="/shop"
               className="border-2 border-gold text-gold px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-gold hover:text-indigo-900"
             >
-              View Packages
-            </Link>
+
           </div>
         </div>
       </section>
