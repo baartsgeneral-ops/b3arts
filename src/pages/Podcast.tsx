@@ -71,7 +71,7 @@ const Podcast = () => {
       {/* Header */}
       <section className="bg-gradient-to-r from-indigo-900 to-purple-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl font-bold mb-6 animate-slide-up">Our Podcast</h1>
+          <h1 className="text-5xl font-bold mb-6 animate-slide-up">Zu Goes OFF Topic Podcast</h1>
           <p className="text-xl max-w-3xl mx-auto leading-relaxed opacity-90">
             Whether it’s painting, music, design, or movement — this podcast explores how art connects to who we are, and why it deserves to be seen, felt, and taken seriously.
 Because sometimes, the most powerful things… are the ones we were told don’t matter.
