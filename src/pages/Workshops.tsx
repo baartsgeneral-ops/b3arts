@@ -167,7 +167,8 @@ const Workshops = () => {
               to="/shop"
               className="border-2 border-gold text-gold px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-gold hover:text-indigo-900"
             >
-
+              Shope
+            </Link>
           </div>
         </div>
       </section>
