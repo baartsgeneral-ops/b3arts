@@ -22,7 +22,7 @@ const SocialMedia = () => {
     },
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com/company/moderncorp',
+      url: 'https://www.linkedin.com/company/baarts',
       followers: '18.2K',
       color: 'bg-gradient-to-r from-blue-700 to-blue-800',
       icon: '💼',
