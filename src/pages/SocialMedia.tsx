@@ -36,7 +36,7 @@ const SocialMedia = () => {
       name: 'Podcast Youtube',
       url: 'https://youtube.com/@zugoesofftopic?si=wwXYtEB3zn0u6pUh',
       color: 'bg-gradient-to-r from-red-500 to-red-600',
-      icon: '🐦',
+      icon: 'https://similarpng.com/_next/image?url=https%3A%2F%2Fimage.similarpng.com%2Ffile%2Fsimilarpng%2Fvery-thumbnail%2F2021%2F10%2FYoutube-icon-design-on-transparent-background-PNG.png&w=3840&q=75',
       description: 'Real-time updates, quick tips, and engaging conversations with our audience.'
     },
     {
