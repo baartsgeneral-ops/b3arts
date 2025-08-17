@@ -86,26 +86,25 @@ const About = () => {
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden">
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-  {teamMembers.map((member, index) => (
-    <div
-      key={index}
-      className="bg-white p-8 rounded-2xl shadow-lg text-center transform transition duration-500 hover:scale-105 hover:shadow-2xl"
-    >
-      <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden flex items-center justify-center bg-gradient-to-br from-indigo-900 to-indigo-700">
-        {member.name === "Sama Hassan" ? (
-          <img
-            src="/src/pic/112.jpg"   // خلي الصورة في فولدر public مش src
-            alt={member.name}
-            className="w-full h-full object-cover"
-          />
-        ) : (
-          <Users size={40} className="text-gold" />
-        )}
-      </div>
-      <h3 className="text-2xl font-bold text-indigo-900 mb-2">{member.name}</h3>
-      <p className="text-gold font-semibold mb-4">{member.role}</p>
-      <p className="text-gray-600 leading-relaxed">{member.description}</p>
-    </div>
-  ))}
+  <img 
+    src="/src/pic/8962.jpg"   // <-- هنا حطي اسم صورك أو لينك الصورة
+    alt={member.name} 
+    className="w-full h-full object-cover"
+      />
+  ) : (
+    <Users size={40} className="text-gold" />
+  )}
 </div>
+                <h3 className="text-2xl font-bold text-indigo-900 mb-2">{member.name}</h3>
+                <p className="text-gold font-semibold mb-4">{member.role}</p>
+                <p className="text-gray-600 leading-relaxed">{member.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default About;
