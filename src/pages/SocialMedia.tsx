@@ -6,7 +6,7 @@ const SocialMedia = () => {
   const socialPlatforms = [
     {
       name: 'Facebook',
-      url: 'https://facebook.com/moderncorp',
+      url: 'https://www.facebook.com/share/1CFFLax8bv/',
       color: 'bg-gradient-to-r from-blue-600 to-blue-700',
       icon: '👥',
       description: 'Join our community discussions and stay updated with our latest news and events.'
