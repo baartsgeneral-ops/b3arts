@@ -78,11 +78,7 @@ const About = () => {
             {teamMembers.map((member, index) => (
               <div 
                 key={member.name}
-                c<section className="py-20 bg-gray-50 flex justify-center items-center min-h-screen">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    ...
-  </div>
-</section>
+                className="text-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 animate-slide-up" 
                 
                 style={{ animationDelay: `${index * 0.2}s` }}
               
