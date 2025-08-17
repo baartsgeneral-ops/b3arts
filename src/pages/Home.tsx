@@ -48,7 +48,7 @@ const Home = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                icon: Star, 
+                icon: ''/src/pic/10.png', 
                 title: 'The Ba(Bȝ)',
                 description: ' A bird with a human head, the Ba represents the soul and uniqueness of every person. For us, it stands for Unique Opportunity: every student has a distinct creative voice that deserves to be heard.'
               },
