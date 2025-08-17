@@ -9,13 +9,13 @@ const About = () => {
       description: 'Visionary leader with 10+ years in digital innovation.'
     },
     {
-      name: 'Michael Chen',
-      role: 'Creative Director',
+      name: 'Upcoming',
+      role: 'Upcoming',
       description: 'Award-winning designer passionate about user experience.'
     },
     {
-      name: 'Emma Davis',
-      role: 'Community Manager',
+      name: 'Upcoming',
+      role: 'Upcoming',
       description: 'Expert in building engaged and thriving communities.'
     }
   ];
