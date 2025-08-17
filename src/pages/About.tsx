@@ -6,17 +6,14 @@ const About = () => {
     {
       name: 'Upcoming',
       role: 'Upcoming',
-      description: 'Upcoming'
     },
     {
       name: 'Sama Hassan',
       role: 'Founder & CEO',
-      description: 'Upcoming'
     },
     {
       name: 'Upcoming',
       role: 'Upcoming',
-      description: 'Expert in building engaged and thriving communitie.'
     }
   ];
 
