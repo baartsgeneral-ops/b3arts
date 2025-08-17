@@ -6,51 +6,51 @@ const Workshops = () => {
   const workshops = [
     {
       id: 1,
-      title: 'Digital Marketing Mastery',
+      title: 'Upcoming',
       image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
-      description: 'Learn advanced digital marketing strategies that drive real results.',
-      participants: 150,
-      date: 'March 15-16, 2025'
+      description: 'Upcoming',
+      participants: Upcoming,
+      date: 'Upcoming, 2025'
     },
     {
       id: 2,
-      title: 'Leadership Excellence',
-      image: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600',
-      description: 'Develop essential leadership skills for the modern workplace.',
-      participants: 120,
-      date: 'March 22-23, 2025'
+      title: 'Upcoming',
+      image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
+      description: 'Upcoming',
+      participants: Upcoming,
+      date: 'Upcoming, 2025'
     },
     {
       id: 3,
-      title: 'Creative Design Workshop',
-      image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600',
-      description: 'Unlock your creative potential with hands-on design exercises.',
-      participants: 85,
-      date: 'April 5-6, 2025'
+      title: 'Upcoming',
+      image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
+      description: 'Upcoming',
+      participants: Upcoming,
+      date: 'Upcoming, 2025'
     },
     {
       id: 4,
-      title: 'Data Analytics Bootcamp',
-      image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600',
-      description: 'Master data analysis techniques and visualization tools.',
-      participants: 95,
-      date: 'April 12-13, 2025'
+      title: 'Upcoming',
+      image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
+      description: 'Upcoming',
+      participants: Upcoming,
+      date: 'Upcoming, 2025'
     },
     {
       id: 5,
-      title: 'Social Media Strategy',
-      image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600',
-      description: 'Build effective social media campaigns that engage audiences.',
-      participants: 110,
-      date: 'April 19-20, 2025'
+      title: 'Upcoming',
+      image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
+      description: 'Upcoming',
+      participants: Upcoming,
+      date: 'Upcoming, 2025'
     },
     {
       id: 6,
-      title: 'Content Creation Mastery',
-      image: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600',
-      description: 'Create compelling content that resonates with your audience.',
-      participants: 75,
-      date: 'April 26-27, 2025'
+      title: 'Upcoming',
+      image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
+      description: 'Upcoming',
+      participants: Upcoming,
+      date: 'Upcoming, 2025'
     }
   ];
 
