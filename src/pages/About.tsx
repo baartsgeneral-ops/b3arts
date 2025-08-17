@@ -47,7 +47,7 @@ const About = () => {
               {[
                 { icon: Target, title: 'Our Vision', text: 'To be the leading platform for innovative learning and community building.' },
                 { icon: Heart, title: 'Our Values', text: 'Our values shape everything we do. We believe in the power of imagination to transform lives, and we grow stronger when we learn and create together as a community. We embrace the meeting point of arts, science, and society, celebrating authenticity through originality and unique voices.' },
-                { icon: Users, title: 'Our Impact', text: 'Empowering thousands of individuals to achieve their personal and professional goals.' }
+                { icon: Users, title: 'Our Impact', text: 'Our impact lies in changing the way young people see art — not as something to be pushed aside, but as a powerful force that belongs at the heart of everything they do. We create spaces where students can connect their artistic expression with science, technology, and everyday life, proving that creativity is not separate from knowledge but a vital part of it. In doing so, we empower young creatives to value their art, integrate it with other fields, and use it as a tool for growth and change.' }
               ].map(({ icon: Icon, title, text }, index) => (
                 <div 
                   key={title}
