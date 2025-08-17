@@ -72,6 +72,20 @@ const About = () => {
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               The passionate individuals behind our success, dedicated to bringing you the best experience possible.
             </p>
+            <h3 className="text-2xl font-bold text-indigo-900 mb-2">
+  {member.name === "Sama Hassan" ? (
+    <a 
+      href="https://google.com"   // هنا تحطي اللينك اللي عايزة يفتح
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="hover:underline text-indigo-900"
+    >
+      {member.name}
+    </a>
+  ) : (
+    member.name
+  )}
+</h3>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 justify-center">
