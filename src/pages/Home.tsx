@@ -89,13 +89,16 @@ const Home = () => {
           <p className="text-xl mb-8 opacity-90">
             Join our community today and unlock your potential with our comprehensive programs.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="https://docs.google.com/forms/d/e/1FAIpQLScMBb92NALBllaIR4s0U3a9s1CmdQTUko2-tmPlWNruU41hAg/viewform?usp=dialog"
-              className="bg-gold text-indigo-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-yellow-400 hover:transform hover:scale-105"
-            >
-              Register Now
-            </Link>
+         <div className="flex flex-col sm:flex-row gap-4 justify-center">
+  <a
+    href="https://forms.gle/kHsqK3LmAbp5Es6R8"   // <-- هنا حطي اللينك اللي عايزاه
+    target="_blank"              // يفتح في تاب جديد
+    rel="noopener noreferrer"    // أمان لللينك الخارجي
+    className="bg-gold text-indigo-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-yellow-400 hover:transform hover:scale-105"
+  >
+    Register Now
+  </a>
+</div>
             <Link
               to="/about"
               className="border-2 border-gold text-gold px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-gold hover:text-indigo-900"
