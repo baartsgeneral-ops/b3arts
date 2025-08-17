@@ -49,8 +49,8 @@ const Home = () => {
             {[
               {
                 icon: Star,
-                title: 'Unique Opportunity',
-                description: ' Access programs and experiences that don’t exist anywhere else in the region'
+                title: 'The Ba',
+                description: ' A bird with a human head, the Ba represents the soul and uniqueness of every person. For us, it stands for Unique Opportunity: every student has a distinct creative voice that deserves to be heard.'
               },
               {
                 icon: Users,
