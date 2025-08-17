@@ -24,7 +24,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold mb-6 animate-slide-up">Who We Are</h1>
           <p className="text-xl max-w-3xl mx-auto leading-relaxed opacity-90">
-            We are a passionate team dedicated to creating meaningful connections and delivering exceptional experiences through innovation and community engagement.
+            We are a youth-led creative community inspired by the spirit of Ancient Egypt, bringing together individuality (Ba), growth & community (Sesen), and integration (Sema). We exist to empower high school students in Egypt and the MENA region to explore their artistic voices and connect across disciplines.
           </p>
         </div>
       </section>
