@@ -9,8 +9,8 @@ const WorkshopDetail = () => {
   const workshopData: { [key: string]: any } = {
     '1': {
       title: 'Upcoming',
-      description: 'UpcomingUpcomingUpcomingUpcomingUpcomingUpcomingUpcoming',
-      fullDescription: 'Upcoming.Upcoming.Upcoming.Upcoming.Upcoming.Upcoming.Upcoming.Upcoming.Upcoming.Upcoming',
+      description: 'UpcomingUpcomingUpcomingUpcomingUpcoming',
+      fullDescription: 'Upcoming.Upcoming.Upcoming.Upcoming.Upcoming.Upcoming.Upcoming.Upcoming',
       date: 'Upcoming, 2025',
       time: '9:00 AM - 5:00 PM',
       location: 'Location',
