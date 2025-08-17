@@ -39,7 +39,7 @@ const Navigation = () => {
                     : 'text-indigo-900'
                 }`}
               >
-                <Icon size={50} />
+                <Icon size={18} />
                 <span className="font-medium">{label}</span>
               </Link>
             ))}
