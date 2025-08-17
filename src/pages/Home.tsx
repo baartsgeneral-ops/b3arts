@@ -54,13 +54,13 @@ const Home = () => {
               },
               {
                 icon: Users,
-                title: 'Supportive Community',
-                description: 'Join a safe, inspiring environment where young talents collaborate, learn, and get recognized.'
+                title: 'The Sema',
+                description: 'The ancient symbol of Sema Tawy, representing the union of the two lands. For us, it means Integration: where arts connect with science, technology, and society to spark innovation.'
               },
               {
                 icon: Zap,
-                title: 'Fast Results',
-                description: 'See immediate impact through our streamlined processes and expert guidance.'
+                title: 'The Sesen',
+                description: 'The lotus flower, symbol of beauty, rebirth, and artistic inspiration. For us, it represents both creative individuality — every student’s unique artistic voice — and community, as talents flourish together just like lotus blossoms opening side by side.'
               }
             ].map(({ icon: Icon, title, description }, index) => (
               <div
