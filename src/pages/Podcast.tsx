@@ -73,7 +73,8 @@ const Podcast = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold mb-6 animate-slide-up">Our Podcast</h1>
           <p className="text-xl max-w-3xl mx-auto leading-relaxed opacity-90">
-            Engaging conversations that inspire, educate, and connect. Join us as we explore ideas that shape the future with industry leaders and innovative thinkers.
+            Whether it’s painting, music, design, or movement — this podcast explores how art connects to who we are, and why it deserves to be seen, felt, and taken seriously.
+Because sometimes, the most powerful things… are the ones we were told don’t matter.
           </p>
         </div>
       </section>
