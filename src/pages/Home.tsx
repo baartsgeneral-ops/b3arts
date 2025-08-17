@@ -70,9 +70,9 @@ const Home = () => {
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="w-16 h-16 bg-indigo-900 rounded-full flex items-center justify-center mx-auto mb-6">
-  {title === 'The Ba(Bȝ)' && <img src="/pic/10.png" alt={title} className="w-full h-full object-contain" />}
-  {title === 'The Sema' && <img src="/pic/9.png" alt={title} className="w-full h-full object-contain" />}
-  {title === 'The Sesen' && <img src="/8.png" alt={title} className="w-full h-full object-contain" />}
+  {title === 'The Ba(Bȝ)' && <img src="/src/pic/10.png" alt={title} className="w-full h-full object-contain" />}
+  {title === 'The Sema' && <img src="/src/pic/9.png" alt={title} className="w-full h-full object-contain" />}
+  {title === 'The Sesen' && <img src="/src/pic/8.png" alt={title} className="w-full h-full object-contain" />}
 </div>
                 <h3 className="text-2xl font-bold text-indigo-900 mb-4">{title}</h3>
                 <p className="text-gray-600 leading-relaxed">{description}</p>
