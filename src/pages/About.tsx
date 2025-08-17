@@ -51,7 +51,7 @@ const About = () => {
                 >
                   <div className="w-12 h-12 bg-indigo-900 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Icon size={24} className="text-gold" />
-                    <div className="flex justify-center items-center min-h-screen"></div>
+                    
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-indigo-900 mb-2">{title}</h3>
@@ -68,6 +68,7 @@ const About = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
+            <div className="flex justify-center items-center min-h-screen"></div>
             <h2 className="text-4xl font-bold text-indigo-900 mb-6">Meet Our Team</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               The passionate individuals behind our success, dedicated to bringing you the best experience possible.
