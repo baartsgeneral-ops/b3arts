@@ -47,7 +47,7 @@ const Navigation = () => {
 
           <div className="md:hidden">
             <button className="text-indigo-900 p-2">
-              <Activity size={50} />
+              <Activity size={24} />
             </button>
           </div>
         </div>
