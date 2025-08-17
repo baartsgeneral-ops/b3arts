@@ -21,7 +21,7 @@ const Navigation = () => {
             <div className="w-8 h-8 bg-indigo-900 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">M</span>
             </div>
-            <span className="text-indigo-900 font-bold text-xl">ModernCorp</span>
+            <span className="text-indigo-900 font-bold text-xl">Bȝ Arts</span>
           </Link>
           
           <div className="hidden md:flex space-x-8">
