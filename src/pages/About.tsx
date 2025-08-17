@@ -49,7 +49,7 @@ const About = () => {
                 >
                   <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden">
   <img 
-    src="/src/pic/1.jpg"   // <-- هنا حطي اسم صورتك أو لينك الصورة
+    src="/src/pic/1.png"   // <-- هنا حطي اسم صورتك أو لينك الصورة
     alt={member.name} 
     className="w-full h-full object-cover"
   />
