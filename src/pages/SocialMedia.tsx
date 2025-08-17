@@ -33,15 +33,15 @@ const SocialMedia = () => {
       description: 'Educational videos, workshop recordings, and exclusive interviews.'
     },
     {
-      name: 'Twitter',
-      url: 'https://twitter.com/moderncorp',
+      name: 'Podcast Youtube',
+      url: 'https://youtube.com/@zugoesofftopic?si=wwXYtEB3zn0u6pUh',
       color: 'bg-gradient-to-r from-sky-400 to-sky-500',
       icon: '🐦',
       description: 'Real-time updates, quick tips, and engaging conversations with our audience.'
     },
     {
       name: 'Podcast Spotify',
-      url: 'https://tiktok.com/@moderncorp',
+      url: 'https://open.spotify.com/show/4ehspgAgKiDJ6KumEWMTsI?si=QZlI34OjRByFAx4iz0-1fg',
       color: 'bg-gradient-to-r from-gray-800 to-gray-900',
       icon: '🎵',
       description: 'Creative short-form content, trends, and fun educational snippets.'
