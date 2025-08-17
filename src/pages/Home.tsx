@@ -49,8 +49,8 @@ const Home = () => {
             {[
               {
                 icon: Star,
-                title: 'Premium Quality',
-                description: 'Every service and product meets the highest standards of excellence and innovation.'
+                title: 'Unique Opportunity',
+                description: ' Access programs and experiences that don’t exist anywhere else in the region'
               },
               {
                 icon: Users,
