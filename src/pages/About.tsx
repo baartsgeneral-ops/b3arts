@@ -12,7 +12,7 @@ const About = () => {
       role: 'Founder & CEO',
     },
     {
-      name: 'Upcomin',
+      name: 'Upcoming',
       role: 'Upcoming',
     }
   ];
