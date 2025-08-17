@@ -4,11 +4,6 @@ import { Users, Target, Heart } from 'lucide-react';
 const About = () => {
   const teamMembers = [
     {
-      name: 'Upcoming',
-      role: 'Upcoming',
-      description: 'Upcoming'
-    },  
-    {
       name: 'Sarah Johnson',
       role: 'Founder & CEO',
       description: 'Visionary leader with 10+ years in digital innovation.'
