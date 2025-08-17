@@ -178,6 +178,7 @@ Because sometimes, the most powerful things… are the ones we were told don’t
               Subscribe Now
             </a>
             <a
+              url:'https://youtube.com/@zugoesofftopic?si=wwXYtEB3zn0u6pUh'
               href="/registration"
               className="border-2 border-gold text-gold px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-gold hover:text-indigo-900"
             >
