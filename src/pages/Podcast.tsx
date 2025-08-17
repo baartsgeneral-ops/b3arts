@@ -17,7 +17,7 @@ const Podcast = () => {
       id: 2,
       title: 'Between Canvas and Calculations | with Isaac James',
       description: 'What’s it like to study art — while also studying mathematics? In this episode, I talk with Isaac James, a student at Washington and Lee University',
-      cover: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600',
+      cover: '/src/pic/122.jpg',
       duration: '26 min',
       youtubeUrl: 'https://youtube.com/@zugoesofftopic?si=wwXYtEB3zn0u6pUh',
       spotifyUrl: 'https://open.spotify.com/show/4ehspgAgKiDJ6KumEWMTsI?si=QZlI34OjRByFAx4iz0-1fg'
