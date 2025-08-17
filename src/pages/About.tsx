@@ -47,8 +47,8 @@ const About = () => {
                   className="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl hover:bg-indigo-50 transition-all duration-300 animate-slide-up"
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
-                  <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden">
-  <img 
+                  <div className="w-12 h-12 bg-indigo-900 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <img 
     src="/src/pic/112.jpg"   // <-- هنا حطي اسم صورتك أو لينك الصورة
     alt={member.name} 
     className="w-full h-full object-cover"
