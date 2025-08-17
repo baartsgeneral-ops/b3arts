@@ -46,7 +46,7 @@ const About = () => {
             <div className="grid grid-cols-1 gap-6">
               {[
                 { icon: Target, title: 'Our Vision', text: 'To be the leading platform for innovative learning and community building.' },
-                { icon: Heart, title: 'Our Values', text: 'Creativity – We believe in the power of imagination to transform lives.Community – We grow stronger when we learn and create together.Integration – We embrace the meeting point of arts, science, and society.Authenticity – We celebrate originality and unique voices.Inspiration – We aim to spark ideas that go beyond borders.`' },
+                { icon: Heart, title: 'Our Values', text: 'Creativity – We believe in the power of imagination to transform lives.Community – We grow stronger when we learn and create together.Integration – We embrace the meeting point of arts, science, and society.Authenticity – We celebrate originality and unique voices.Inspiration – We aim to spark ideas that go beyond borders.' },
                 { icon: Users, title: 'Our Impact', text: 'Empowering thousands of individuals to achieve their personal and professional goals.' }
               ].map(({ icon: Icon, title, text }, index) => (
                 <div 
