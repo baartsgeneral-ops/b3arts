@@ -3,7 +3,6 @@ import { Users, Target, Heart } from 'lucide-react';
 
 const About = () => {
   const teamMembers = [
-
     {
       name: 'Sama Hassan',
       role: 'Founder & CEO',
