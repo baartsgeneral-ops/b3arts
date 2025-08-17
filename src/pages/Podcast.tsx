@@ -1,0 +1,211 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Play, ExternalLink, ArrowLeft } from 'lucide-react';
+
+const Podcast = () => {
+  const episodes = [
+    {
+      id: 1,
+      title: 'The Future of Digital Innovation',
+      description: 'Exploring emerging technologies and their impact on society with leading experts.',
+      cover: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600',
+      duration: '45 min',
+      youtubeUrl: 'https://youtube.com/watch?v=example1',
+      spotifyUrl: 'https://open.spotify.com/episode/example1'
+    },
+    {
+      id: 2,
+      title: 'Building Sustainable Communities',
+      description: 'How to create lasting impact through community-driven initiatives and collaboration.',
+      cover: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600',
+      duration: '38 min',
+      youtubeUrl: 'https://youtube.com/watch?v=example2',
+      spotifyUrl: 'https://open.spotify.com/episode/example2'
+    },
+    {
+      id: 3,
+      title: 'Leadership in the Modern Era',
+      description: 'Insights from successful leaders on navigating challenges in today\'s business landscape.',
+      cover: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
+      duration: '52 min',
+      youtubeUrl: 'https://youtube.com/watch?v=example3',
+      spotifyUrl: 'https://open.spotify.com/episode/example3'
+    },
+    {
+      id: 4,
+      title: 'Creative Problem Solving',
+      description: 'Techniques and strategies for approaching complex problems with innovative solutions.',
+      cover: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600',
+      duration: '41 min',
+      youtubeUrl: 'https://youtube.com/watch?v=example4',
+      spotifyUrl: 'https://open.spotify.com/episode/example4'
+    }
+  ];
+
+  const platforms = [
+    {
+      name: 'Instagram',
+      url: 'https://instagram.com/moderncorp',
+      color: 'bg-gradient-to-r from-purple-500 to-pink-500',
+      icon: '📷'
+    },
+    {
+      name: 'YouTube',
+      url: 'https://youtube.com/moderncorp',
+      color: 'bg-gradient-to-r from-red-500 to-red-600',
+      icon: '📺'
+    },
+    {
+      name: 'Spotify',
+      url: 'https://spotify.com/moderncorp',
+      color: 'bg-gradient-to-r from-green-500 to-green-600',
+      icon: '🎵'
+    }
+  ];
+
+  return (
+    <div className="animate-fade-in pt-8">
+      {/* Back to Activities Button */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <Link
+          to="/activities"
+          className="inline-flex items-center space-x-2 text-indigo-900 hover:text-gold transition-colors duration-300 font-medium"
+        >
+          <ArrowLeft size={20} />
+          <span>Back to Activities</span>
+        </Link>
+      </div>
+
+      {/* Header */}
+      <section className="bg-gradient-to-r from-indigo-900 to-purple-900 text-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-5xl font-bold mb-6 animate-slide-up">Our Podcast</h1>
+          <p className="text-xl max-w-3xl mx-auto leading-relaxed opacity-90">
+            Engaging conversations that inspire, educate, and connect. Join us as we explore ideas that shape the future with industry leaders and innovative thinkers.
+          </p>
+        </div>
+      </section>
+
+      {/* Platform Links */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-indigo-900 text-center mb-12">Listen On Your Favorite Platform</h2>
+          <div className="flex flex-wrap justify-center gap-6">
+            {platforms.map((platform, index) => (
+              <a
+                key={platform.name}
+                href={platform.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${platform.color} text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:transform hover:scale-105 shadow-lg flex items-center space-x-3 animate-slide-up`}
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
+                <span className="text-2xl">{platform.icon}</span>
+                <span>{platform.name}</span>
+                <ExternalLink size={20} />
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Latest Episodes */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-indigo-900 mb-6">Latest Episodes</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Discover our most recent conversations and insights from thought leaders across various industries.
+            </p>
+          </div>
+          
+          <div className="overflow-x-auto pb-6">
+            <div className="flex space-x-6 min-w-max">
+              {episodes.map((episode, index) => (
+                <div 
+                  key={episode.id}
+                  className="flex-shrink-0 w-80 bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 hover:transform hover:scale-105 animate-slide-up"
+                  style={{ animationDelay: `${index * 0.2}s` }}
+                >
+                  <div className="relative">
+                    <img
+                      src={episode.cover}
+                      alt={episode.title}
+                      className="w-full h-48 object-cover"
+                    />
+                    <div className="absolute bottom-4 right-4 bg-indigo-900 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      {episode.duration}
+                    </div>
+                  </div>
+                  
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-indigo-900 mb-3">{episode.title}</h3>
+                    <p className="text-gray-600 leading-relaxed mb-6">{episode.description}</p>
+                    
+                    <div className="flex flex-col space-y-3">
+                      <a
+                        href={episode.youtubeUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-red-600 text-white px-4 py-2 rounded-lg font-semibold text-center transition-all duration-300 hover:bg-red-700 flex items-center justify-center space-x-2"
+                      >
+                        <span>📺</span>
+                        <span>Watch on YouTube</span>
+                      </a>
+                      <a
+                        href={episode.spotifyUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-green-600 text-white px-4 py-2 rounded-lg font-semibold text-center transition-all duration-300 hover:bg-green-700 flex items-center justify-center space-x-2"
+                      >
+                        <span>🎵</span>
+                        <span>Listen on Spotify</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Subscribe CTA */}
+      <section className="bg-indigo-900 text-white py-16">
+        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold mb-6">Never Miss an Episode</h2>
+          <p className="text-xl mb-8 opacity-90">
+            Subscribe to get notified when we release new episodes and exclusive behind-the-scenes content.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="mailto:subscribe@moderncorp.com?subject=Podcast Subscription"
+              className="bg-gold text-indigo-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-yellow-400 hover:transform hover:scale-105"
+            >
+              Subscribe Now
+            </a>
+            <a
+              href="/registration"
+              className="border-2 border-gold text-gold px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-gold hover:text-indigo-900"
+            >
+              Join Workshop
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Back to Activities Button - Bottom */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
+        <Link
+          to="/activities"
+          className="inline-flex items-center space-x-2 bg-indigo-900 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-gold hover:text-indigo-900"
+        >
+          <ArrowLeft size={20} />
+          <span>Back to Activities</span>
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+export default Podcast;
