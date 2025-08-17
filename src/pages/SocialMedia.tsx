@@ -52,7 +52,7 @@ const SocialMedia = () => {
     {
       id: 1,
       platform: 'Instagram',
-      content: 'Behind the scenes at our latest workshop! Amazing energy from all participants. 🚀',
+      content: 'Upcoming',
       image: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600',
       likes: 234,
       comments: 18,
@@ -61,7 +61,7 @@ const SocialMedia = () => {
     {
       id: 2,
       platform: 'LinkedIn',
-      content: 'Key insights from our latest podcast episode on digital transformation.',
+      content: 'Upcoming',
       image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600',
       likes: 189,
       comments: 25,
@@ -70,7 +70,7 @@ const SocialMedia = () => {
     {
       id: 3,
       platform: 'YouTube',
-      content: 'New video: "5 Essential Skills for Modern Leaders" - Watch now!',
+      content: 'Upcoming',
       image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
       likes: 456,
       comments: 67,
