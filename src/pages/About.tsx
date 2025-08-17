@@ -65,7 +65,7 @@ const About = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-gray-50 flex justify-center items-center min-h-screen">
+      <section className="py-20 bg-gray-50 flex justify-center items-center min-h-screen ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-indigo-900 mb-6">Meet Our Team</h2>
