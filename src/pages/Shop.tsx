@@ -66,7 +66,7 @@ const Shop = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold mb-6 animate-slide-up">Shop</h1>
           <p className="text-xl max-w-3xl mx-auto leading-relaxed opacity-90">
-            Discover our curated collection of premium products designed to enhance your learning and growth journey.
+            Discover our curated collection of premium products from youth to youth.
           </p>
         </div>
       </section>
