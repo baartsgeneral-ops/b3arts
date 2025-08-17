@@ -19,8 +19,8 @@ const Podcast = () => {
       description: 'How to create lasting impact through community-driven initiatives and collaboration.',
       cover: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600',
       duration: '38 min',
-      youtubeUrl: 'https://youtube.com/watch?v=example2',
-      spotifyUrl: 'https://open.spotify.com/episode/example2'
+      youtubeUrl: 'https://youtube.com/@zugoesofftopic?si=wwXYtEB3zn0u6pUh',
+      spotifyUrl: 'https://open.spotify.com/show/4ehspgAgKiDJ6KumEWMTsI?si=QZlI34OjRByFAx4iz0-1fg'
     },
     {
       id: 3,
@@ -28,8 +28,8 @@ const Podcast = () => {
       description: 'Insights from successful leaders on navigating challenges in today\'s business landscape.',
       cover: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
       duration: '52 min',
-      youtubeUrl: 'https://youtube.com/watch?v=example3',
-      spotifyUrl: 'https://open.spotify.com/episode/example3'
+      youtubeUrl: 'https://youtube.com/@zugoesofftopic?si=wwXYtEB3zn0u6pUh',
+      spotifyUrl: 'https://open.spotify.com/show/4ehspgAgKiDJ6KumEWMTsI?si=QZlI34OjRByFAx4iz0-1fg'
     },
     {
       id: 4,
@@ -37,27 +37,27 @@ const Podcast = () => {
       description: 'Techniques and strategies for approaching complex problems with innovative solutions.',
       cover: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600',
       duration: '41 min',
-      youtubeUrl: 'https://youtube.com/watch?v=example4',
-      spotifyUrl: 'https://open.spotify.com/episode/example4'
+      youtubeUrl: 'https://youtube.com/@zugoesofftopic?si=wwXYtEB3zn0u6pUh',
+      spotifyUrl: 'https://open.spotify.com/show/4ehspgAgKiDJ6KumEWMTsI?si=QZlI34OjRByFAx4iz0-1fg'
     }
   ];
 
   const platforms = [
     {
       name: 'Instagram',
-      url: 'https://instagram.com/moderncorp',
+      url: 'https://www.instagram.com/zu_goes_off_topic?igsh=MW1zMjZsd2pzMHBrdg==',
       color: 'bg-gradient-to-r from-purple-500 to-pink-500',
       icon: '📷'
     },
     {
       name: 'YouTube',
-      url: 'https://youtube.com/moderncorp',
+      url: 'https://youtube.com/@zugoesofftopic?si=wwXYtEB3zn0u6pUh',
       color: 'bg-gradient-to-r from-red-500 to-red-600',
       icon: '📺'
     },
     {
       name: 'Spotify',
-      url: 'https://spotify.com/moderncorp',
+      url: 'https://open.spotify.com/show/4ehspgAgKiDJ6KumEWMTsI?si=QZlI34OjRByFAx4iz0-1fg',
       color: 'bg-gradient-to-r from-green-500 to-green-600',
       icon: '🎵'
     }
