@@ -86,11 +86,16 @@ const About = () => {
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden">
-  <img 
-    src="/src/pic/1.jpg"   // <-- هنا حطي اسم صورتك أو لينك الصورة
-    alt={member.name} 
-    className="w-full h-full object-cover"
-  />
+ <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden flex items-center justify-center bg-gradient-to-br from-indigo-900 to-indigo-700">
+  {member.name === "Sama Hassan" ? (
+    <img 
+      src="/src/pic/1.jpg"   // ← حطي مكان الصورة هنا
+      alt={member.name}
+      className="w-full h-full object-cover"
+    />
+  ) : (
+    <Users size={40} className="text-gold" />
+  )}
 </div>
                 <h3 className="text-2xl font-bold text-indigo-900 mb-2">{member.name}</h3>
                 <p className="text-gold font-semibold mb-4">{member.role}</p>
