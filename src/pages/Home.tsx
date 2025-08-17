@@ -91,7 +91,7 @@ const Home = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              to="https://forms.gle/FMW4k89rjmBmwyD7A"
+              to="https://docs.google.com/forms/d/e/1FAIpQLScMBb92NALBllaIR4s0U3a9s1CmdQTUko2-tmPlWNruU41hAg/viewform?usp=dialog"
               className="bg-gold text-indigo-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-yellow-400 hover:transform hover:scale-105"
             >
               Register Now
