@@ -22,7 +22,7 @@ const Navigation = () => {
         <img 
   src="/src/pic/logo.png" 
   alt="Logo" 
-  className="h-8 w-auto"
+  className="h-16 w-auto"
 />
             </div>
             <span className="text-indigo-900 font-bold text-xl">Bȝ Arts</span>
