@@ -40,7 +40,7 @@ const SocialMedia = () => {
       description: 'Real-time updates, quick tips, and engaging conversations with our audience.'
     },
     {
-      name: 'Podcas's Spotify',
+      name: 'Podcast Spotify',
       url: 'https://tiktok.com/@moderncorp',
       color: 'bg-gradient-to-r from-gray-800 to-gray-900',
       icon: '🎵',
