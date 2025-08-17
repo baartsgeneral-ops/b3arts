@@ -35,7 +35,7 @@ const SocialMedia = () => {
     {
       name: 'Podcast Youtube',
       url: 'https://youtube.com/@zugoesofftopic?si=wwXYtEB3zn0u6pUh',
-      color: 'bg-gradient-to-r from-sky-400 to-sky-500',
+      color: 'bg-gradient-to-r from-red-500 to-red-600',
       icon: '🐦',
       description: 'Real-time updates, quick tips, and engaging conversations with our audience.'
     },
