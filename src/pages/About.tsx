@@ -50,14 +50,8 @@ const About = () => {
                   
                 >
                   <div className="w-12 h-12 bg-indigo-900 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden">
-  <img 
-    src="/src/pic/89.jpg"  // <-- هنا حطي اسم صورتك أو لينك الصورة
-    alt={member.name} 
-    className="w-full h-full object-cover"
-  /> 
-</div>
-                    
+                    <Icon size={24} className="text-gold" />
+                  
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-indigo-900 mb-2">{title}</h3>
