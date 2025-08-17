@@ -207,12 +207,7 @@ const Magazine = () => {
             Subscribe to our newsletter and never miss the latest articles, insights, and creative content.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-1 px-6 py-3 rounded-full text-indigo-900 font-medium focus:outline-none focus:ring-2 focus:ring-gold"
-            />
-
+          
           </div>
         </div>
       </section>
