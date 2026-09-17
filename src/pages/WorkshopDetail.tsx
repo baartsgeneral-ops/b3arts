@@ -4,9 +4,22 @@ import { ArrowLeft, Calendar, Users, Clock, MapPin } from 'lucide-react';
 
 const WorkshopDetail = () => {
   const { id } = useParams();
-  
+
+  interface Workshop {
+    title: string;
+    description: string;
+    fullDescription: string;
+    date: string;
+    time: string;
+    location: string;
+    participants: number;
+    instructor: string;
+    images: string[];
+    highlights: string[];
+  }
+
   // Workshop data - in a real app, this would come from an API
-  const workshopData: { [key: string]: any } = {
+  const workshopData: Record<string, Workshop> = {
     '1': {
       title: 'Upcoming',
       description: 'UpcomingUpcomingUpcomingUpcomingUpcoming',

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Play, ExternalLink, ArrowLeft } from 'lucide-react';
+import { ExternalLink, ArrowLeft } from 'lucide-react';
 
 const Podcast = () => {
   const episodes = [
