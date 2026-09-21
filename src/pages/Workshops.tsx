@@ -1,41 +1,42 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Calendar, Users, Award, ArrowLeft } from 'lucide-react';
 
 const Workshops = () => {
+  const { t } = useTranslation();
+
   const workshops = [
     {
       id: 1,
-      title: 'upcoming',
-      image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
-      description: 'upcoming',
+      title: t('workshops.w1Title'),
+      image: '/images/workshops/mun-cover.webp',
+      description: t('workshops.w1Desc'),
       participants: 50,
-      date: 'upcoming, 2025'
+      date: '6 Sep. 2025'
     },
     {
       id: 2,
-      title: 'upcoming',
-      image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
-      description: 'upcoming',
-      participants: 50,
-      date: 'upcoming, 2025'
+      title: t('workshops.w2Title'),
+      image: '/images/workshops/folklore.webp',
+      description: t('workshops.w2Desc'),
+      participants: 60,
+      date: '16 April. 2026'
     },
     {
       id: 3,
-      title: 'upcoming',
-      image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
-      description: 'upcoming',
-      participants: 50,
-      date: 'upcoming, 2025'
+      title: t('workshops.w3Title'),
+      image: '/images/workshops/gd-course.webp',
+      description: t('workshops.w3Desc'),
+      participants: 0,
+      date: t('workshops.dateAnytime')
     },
-    {
-      id: 4,
-      title: 'upcoming',
-      image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600',
-      description: 'upcoming',
-      participants: 50,
-      date: 'upcoming, 2025'
-    },
+  ];
+
+  const stats = [
+    { icon: Users, number: '2000+', label: t('workshops.statParticipants') },
+    { icon: Calendar, number: '20+', label: t('workshops.statWorkshops') },
+    { icon: Award, number: '99%', label: t('workshops.statSatisfaction') }
   ];
 
   return (
@@ -44,19 +45,19 @@ const Workshops = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <Link
           to="/activities"
-          className="inline-flex items-center space-x-2 text-indigo-900 hover:text-gold transition-colors duration-300 font-medium"
+          className="inline-flex items-center space-x-2 rtl:space-x-reverse text-indigo-900 hover:text-gold transition-colors duration-300 font-medium"
         >
-          <ArrowLeft size={20} />
-          <span>Back to Activities</span>
+          <ArrowLeft size={20} className="rtl:rotate-180" />
+          <span>{t('workshops.backToActivities')}</span>
         </Link>
       </div>
 
       {/* Header */}
       <section className="bg-gradient-to-r from-indigo-900 to-blue-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl font-bold mb-6 animate-slide-up">Workshops</h1>
+          <h1 className="text-5xl font-bold mb-6 animate-slide-up">{t('workshops.title')}</h1>
           <p className="text-xl max-w-3xl mx-auto leading-relaxed opacity-90">
-            Interactive learning experiences designed to build practical skills, foster collaboration, and accelerate your professional growth.
+            {t('workshops.headerDesc')}
           </p>
         </div>
       </section>
@@ -65,11 +66,7 @@ const Workshops = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8 text-center">
-            {[
-              { icon: Users, number: 'Upcoming', label: 'Participants Trained' },
-              { icon: Calendar, number: 'Upcoming', label: 'Workshops This Year' },
-              { icon: Award, number: 'upcoming', label: 'Satisfaction Rate' }
-            ].map(({ icon: Icon, number, label }, index) => (
+            {stats.map(({ icon: Icon, number, label }, index) => (
               <div 
                 key={label}
                 className="animate-slide-up"
@@ -88,9 +85,9 @@ const Workshops = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-indigo-900 mb-6">Upcoming Workshops</h2>
+            <h2 className="text-4xl font-bold text-indigo-900 mb-6">{t('workshops.galleryTitle')}</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Join our expert-led workshops and gain practical skills that you can apply immediately in your professional journey.
+              {t('workshops.galleryDesc')}
             </p>
           </div>
           
@@ -111,8 +108,8 @@ const Workshops = () => {
                     alt={workshop.title}
                     className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute top-4 right-4 bg-indigo-900 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                    {workshop.participants} enrolled
+                  <div className="absolute top-4 right-4 rtl:right-auto rtl:left-4 bg-indigo-900 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    {workshop.participants > 0 ? `${workshop.participants} ${t('workshops.enrolled')}` : t('workshops.unlimited')}
                   </div>
                 </div>
                 
@@ -121,23 +118,23 @@ const Workshops = () => {
                   <p className="text-gray-600 mb-4 leading-relaxed">{workshop.description}</p>
                   
                   <div className="flex items-center text-sm text-gray-500 mb-6">
-                    <Calendar size={16} className="mr-2" />
+                    <Calendar size={16} className="mr-2 rtl:mr-0 rtl:ml-2" />
                     <span>{workshop.date}</span>
                   </div>
                   
-                  <div className="flex items-center space-x-2">
-                    <div className="flex -space-x-2">
+                  <div className="flex items-center space-x-2 rtl:space-x-reverse">
+                    <div className="flex -space-x-2 rtl:space-x-reverse">
                       {[1, 2, 3].map((i) => (
                         <div key={i} className="w-8 h-8 bg-indigo-100 rounded-full border-2 border-white flex items-center justify-center">
                           <Users size={14} className="text-indigo-600" />
                         </div>
                       ))}
                     </div>
-                    <span className="text-sm text-gray-600">+{workshop.participants - 3} more</span>
+                    <span className="text-sm text-gray-600">{workshop.participants > 3 ? `+${workshop.participants - 3} ${t('workshops.more')}` : t('workshops.joinUs')}</span>
                     
-                    <div className="ml-auto">
+                    <div className="ml-auto rtl:ml-0 rtl:mr-auto">
                       <span className="text-indigo-900 font-semibold group-hover:text-gold transition-colors duration-300">
-                        View Details →
+                        {t('workshops.viewDetails')}
                       </span>
                     </div>
                   </div>
@@ -152,26 +149,22 @@ const Workshops = () => {
       {/* Registration CTA */}
       <section className="bg-indigo-900 text-white py-20">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-6">Ready to Join a Workshop?</h2>
+          <h2 className="text-4xl font-bold mb-6">{t('workshops.readyToJoin')}</h2>
           <p className="text-xl mb-8 opacity-90">
-            Take the first step towards professional growth. Register now and secure your spot in our upcoming workshops.
+            {t('workshops.readyToJoinDesc')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-<div className="flex flex-col sm:flex-row gap-4 justify-center">
-      <a
-        href="https://forms.gle/wRp1EBjwRZnLUeoDA"   
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-gold text-indigo-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-yellow-400 hover:transform hover:scale-105"
-      >
-        Register Now
-      </a>
-</div>
+            <Link
+              to="/registration"
+              className="bg-gold text-indigo-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-yellow-400 hover:transform hover:scale-105"
+            >
+              {t('workshops.registerNow')}
+            </Link>
             <Link
               to="/shop"
               className="border-2 border-gold text-gold px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-gold hover:text-indigo-900"
             >
-              Shope
+              {t('workshops.shop')}
             </Link>
           </div>
         </div>
@@ -181,10 +174,10 @@ const Workshops = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
         <Link
           to="/activities"
-          className="inline-flex items-center space-x-2 bg-indigo-900 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-gold hover:text-indigo-900"
+          className="inline-flex items-center space-x-2 rtl:space-x-reverse bg-indigo-900 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-gold hover:text-indigo-900"
         >
-          <ArrowLeft size={20} />
-          <span>Back to Activities</span>
+          <ArrowLeft size={20} className="rtl:rotate-180" />
+          <span>{t('workshops.backToActivities')}</span>
         </Link>
       </div>
     </div>

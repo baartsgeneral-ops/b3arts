@@ -1,6 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  variants: {
+    extend: {
+      margin: ['rtl', 'ltr'],
+      padding: ['rtl', 'ltr'],
+      space: ['rtl', 'ltr'],
+      textAlign: ['rtl', 'ltr'],
+      inset: ['rtl', 'ltr'],
+      borderRadius: ['rtl', 'ltr'],
+    },
+  },
   theme: {
     extend: {
       colors: {
@@ -11,8 +21,10 @@ export default {
         cream: '#faf7f0',
       },
       fontFamily: {
-        sans: ['Manrope', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        sans: ['Manrope', '"IBM Plex Sans Arabic"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         display: ['"Playfair Display"', 'Georgia', 'serif'],
+        arabic: ['"IBM Plex Sans Arabic"', 'Manrope', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        script: ['Amiri', '"IBM Plex Sans Arabic"', 'serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-in-out',

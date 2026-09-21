@@ -1,66 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { BookOpen, User, Calendar, ArrowLeft } from 'lucide-react';
 
 const Magazine = () => {
-  const articles = [
-    {
-      id: 1,
-      title: 'Upcoming',
-      image: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600',
-      artist: 'Sarah Johnson',
-      description: 'Upcoming',
-      date: 'Upcoming 2025',
-      category: 'Upcoming'
-    },
-    {
-      id: 2,
-      title: 'Upcoming',
-      image: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600',
-      artist: 'Sarah Johnson',
-      description: 'Upcoming',
-      date: 'Upcoming 2025',
-      category: 'Upcoming'
-    },
-    {
-      id: 3,
-      title: 'Upcoming',
-      image: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600',
-      artist: 'Sarah Johnson',
-      description: 'Upcoming',
-      date: 'Upcoming 2025',
-      category: 'Upcoming'
-    },
-    {
-      id: 4,
-      title: 'Upcoming',
-      image: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600',
-      artist: 'Sarah Johnson',
-      description: 'Upcoming',
-      date: 'Upcoming 2025',
-      category: 'Upcoming'
-    },
-    {
-      id: 5,
-      title: 'Upcoming',
-      image: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600',
-      artist: 'Sarah Johnson',
-      description: 'Upcoming',
-      date: 'Upcoming 2025',
-      category: 'Upcoming'
-    },
-    {
-      id: 6,
-      title: 'Upcoming',
-      image: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600',
-      artist: 'Sarah Johnson',
-      description: 'Upcoming',
-      date: 'Upcoming 2025',
-      category: 'Upcoming'
-    }
-  ];
+  const { t } = useTranslation();
 
-  const categories = ['All', 'Technology', 'Design', 'Management', 'Art', 'Analytics', 'Leadership'];
+  const upcoming = t('magazine.upcoming');
+
+  const articles = Array.from({ length: 6 }, (_, i) => ({
+    id: i + 1,
+    title: upcoming,
+    image: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600',
+    artist: 'Sarah Johnson',
+    description: upcoming,
+    date: `${upcoming} 2025`,
+    category: upcoming
+  }));
+
+  const categories = t('magazine.categories', { returnObjects: true }) as string[];
 
   return (
     <div className="animate-fade-in pt-8">
@@ -68,19 +26,19 @@ const Magazine = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <Link
           to="/activities"
-          className="inline-flex items-center space-x-2 text-indigo-900 hover:text-gold transition-colors duration-300 font-medium"
+          className="inline-flex items-center space-x-2 rtl:space-x-reverse text-indigo-900 hover:text-gold transition-colors duration-300 font-medium"
         >
-          <ArrowLeft size={20} />
-          <span>Back to Activities</span>
+          <ArrowLeft size={20} className="rtl:rotate-180" />
+          <span>{t('magazine.backToActivities')}</span>
         </Link>
       </div>
 
       {/* Header */}
       <section className="bg-gradient-to-r from-indigo-900 to-purple-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl font-bold mb-6 animate-slide-up">Digital Magazine</h1>
+          <h1 className="text-5xl font-bold mb-6 animate-slide-up">{t('magazine.title')}</h1>
           <p className="text-xl max-w-3xl mx-auto leading-relaxed opacity-90">
-            A curated collection of insights, stories, and creative expressions from industry leaders and innovative thinkers.
+            {t('magazine.headerDesc')}
           </p>
         </div>
       </section>
@@ -132,13 +90,13 @@ const Magazine = () => {
                     {article.title}
                   </h2>
                   
-                  <div className="flex items-center space-x-4 text-sm text-gray-500 mb-4">
+                  <div className="flex items-center space-x-4 rtl:space-x-reverse text-sm text-gray-500 mb-4">
                     <div className="flex items-center">
-                      <User size={16} className="mr-1" />
+                      <User size={16} className="mr-1 rtl:mr-0 rtl:ml-1" />
                       <span>{article.artist}</span>
                     </div>
                     <div className="flex items-center">
-                      <Calendar size={16} className="mr-1" />
+                      <Calendar size={16} className="mr-1 rtl:mr-0 rtl:ml-1" />
                       <span>{article.date}</span>
                     </div>
                   </div>
@@ -147,10 +105,10 @@ const Magazine = () => {
                     {article.description}
                   </p>
                   
-                  <button className="w-full bg-indigo-900 text-white py-3 px-6 rounded-full font-semibold transition-all duration-300 hover:bg-gold hover:text-indigo-900 flex items-center justify-center space-x-2 group">
+                  <button className="w-full bg-indigo-900 text-white py-3 px-6 rounded-full font-semibold transition-all duration-300 hover:bg-gold hover:text-indigo-900 flex items-center justify-center space-x-2 rtl:space-x-reverse group">
                     <BookOpen size={20} />
-                    <span>Read Article</span>
-                    <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <span>{t('magazine.readArticle')}</span>
+                    <svg className="w-4 h-4 transform rotate-0 rtl:rotate-180 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </button>
@@ -167,22 +125,22 @@ const Magazine = () => {
           <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-3xl p-8 lg:p-12">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-4xl font-bold text-indigo-900 mb-6">Featured Author Spotlight</h2>
+                <h2 className="text-4xl font-bold text-indigo-900 mb-6">{t('magazine.authorSpotlight')}</h2>
                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                  This month we're highlighting the exceptional work of our contributing authors who bring unique perspectives and valuable insights to our community.
+                  {t('magazine.authorSpotlightDesc')}
                 </p>
                 <div className="bg-white p-6 rounded-2xl shadow-lg">
-                  <div className="flex items-center space-x-4 mb-4">
+                  <div className="flex items-center space-x-4 rtl:space-x-reverse mb-4">
                     <div className="w-16 h-16 bg-indigo-900 rounded-full flex items-center justify-center">
                       <User size={32} className="text-gold" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-indigo-900">Upcoming</h3>
-                      <p className="text-gray-600">Upcoming</p>
+                      <h3 className="text-xl font-bold text-indigo-900">{upcoming}</h3>
+                      <p className="text-gray-600">{upcoming}</p>
                     </div>
                   </div>
                   <p className="text-gray-600">
-                    "Upcoming Upcoming Upcoming"
+                    "{upcoming}"
                   </p>
                 </div>
               </div>
@@ -202,13 +160,10 @@ const Magazine = () => {
       {/* Newsletter Signup */}
       <section className="bg-indigo-900 text-white py-16">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-6">Stay Updated</h2>
+          <h2 className="text-4xl font-bold mb-6">{t('magazine.stayUpdated')}</h2>
           <p className="text-xl mb-8 opacity-90">
-            With our newsletter and never miss the latest articles, insights, and creative content.
+            {t('magazine.stayUpdatedDesc')}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-          
-          </div>
         </div>
       </section>
 
@@ -216,10 +171,10 @@ const Magazine = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
         <Link
           to="/activities"
-          className="inline-flex items-center space-x-2 bg-indigo-900 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-gold hover:text-indigo-900"
+          className="inline-flex items-center space-x-2 rtl:space-x-reverse bg-indigo-900 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-gold hover:text-indigo-900"
         >
-          <ArrowLeft size={20} />
-          <span>Back to Activities</span>
+          <ArrowLeft size={20} className="rtl:rotate-180" />
+          <span>{t('magazine.backToActivities')}</span>
         </Link>
       </div>
     </div>

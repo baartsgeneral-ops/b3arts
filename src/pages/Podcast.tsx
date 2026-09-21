@@ -1,37 +1,39 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { ExternalLink, ArrowLeft } from 'lucide-react';
 
 const Podcast = () => {
+  const { t } = useTranslation();
+
   const episodes = [
     {
       id: 1,
-      title: 'فنون جميلة|مع شهد الشاذلي',
-      description: ' في الحلقة دي من zu goes off topic، بنفتح الباب على واحدة من أكتر الكليات اللي حواليها تساؤلات وخرافات: فنون جميلة.',
-      cover: '/src/pic/112.jpg',
+      title: t('podcast.ep1Title'),
+      description: t('podcast.ep1Desc'),
+      cover: '/images/podcast/pod1.webp',
       duration: '26 min',
       youtubeUrl: 'https://youtube.com/@zugoesofftopic?si=wwXYtEB3zn0u6pUh',
       spotifyUrl: 'https://open.spotify.com/show/4ehspgAgKiDJ6KumEWMTsI?si=QZlI34OjRByFAx4iz0-1fg'
     },
     {
       id: 2,
-      title: 'Between Canvas and Calculations | with Isaac James',
-      description: 'What’s it like to study art — while also studying mathematics? In this episode, I talk with Isaac James, a student at Washington and Lee University',
-      cover: '/src/pic/122.jpg',
+      title: t('podcast.ep2Title'),
+      description: t('podcast.ep2Desc'),
+      cover: '/images/podcast/pod2.webp',
       duration: '26 min',
       youtubeUrl: 'https://youtube.com/@zugoesofftopic?si=wwXYtEB3zn0u6pUh',
       spotifyUrl: 'https://open.spotify.com/show/4ehspgAgKiDJ6KumEWMTsI?si=QZlI34OjRByFAx4iz0-1fg'
     },
     {
       id: 3,
-      title: 'Feeling Through Art – with Róisín Lyst',
-      description: 'In this very first episode of zu goes off topic, I sit down with artist Róisín Lyst to talk about what art truly means beyond school walls and technical rules.',
-      cover: '/src/pic/132.jpg',
+      title: t('podcast.ep3Title'),
+      description: t('podcast.ep3Desc'),
+      cover: '/images/podcast/pod3.webp',
       duration: '24 min',
       youtubeUrl: 'https://youtube.com/@zugoesofftopic?si=wwXYtEB3zn0u6pUh',
       spotifyUrl: 'https://open.spotify.com/show/4ehspgAgKiDJ6KumEWMTsI?si=QZlI34OjRByFAx4iz0-1fg'
-    },
-
+    }
   ];
 
   const platforms = [
@@ -61,20 +63,19 @@ const Podcast = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <Link
           to="/activities"
-          className="inline-flex items-center space-x-2 text-indigo-900 hover:text-gold transition-colors duration-300 font-medium"
+          className="inline-flex items-center space-x-2 rtl:space-x-reverse text-indigo-900 hover:text-gold transition-colors duration-300 font-medium"
         >
-          <ArrowLeft size={20} />
-          <span>Back to Activities</span>
+          <ArrowLeft size={20} className="rtl:rotate-180" />
+          <span>{t('podcast.backToActivities')}</span>
         </Link>
       </div>
 
       {/* Header */}
       <section className="bg-gradient-to-r from-indigo-900 to-purple-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl font-bold mb-6 animate-slide-up">Zu Goes OFF Topic Podcast</h1>
+          <h1 className="text-5xl font-bold mb-6 animate-slide-up">{t('podcast.title')}</h1>
           <p className="text-xl max-w-3xl mx-auto leading-relaxed opacity-90">
-            Whether it’s painting, music, design, or movement — this podcast explores how art connects to who we are, and why it deserves to be seen, felt, and taken seriously.
-Because sometimes, the most powerful things… are the ones we were told don’t matter.
+            {t('podcast.desc')}
           </p>
         </div>
       </section>
@@ -82,7 +83,7 @@ Because sometimes, the most powerful things… are the ones we were told don’t
       {/* Platform Links */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-indigo-900 text-center mb-12">Listen On Your Favorite Platform</h2>
+          <h2 className="text-3xl font-bold text-indigo-900 text-center mb-12">{t('podcast.listenOn')}</h2>
           <div className="flex flex-wrap justify-center gap-6">
             {platforms.map((platform, index) => (
               <a
@@ -90,7 +91,7 @@ Because sometimes, the most powerful things… are the ones we were told don’t
                 href={platform.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`${platform.color} text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:transform hover:scale-105 shadow-lg flex items-center space-x-3 animate-slide-up`}
+                className={`${platform.color} text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:transform hover:scale-105 shadow-lg flex items-center space-x-3 rtl:space-x-reverse animate-slide-up`}
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <span className="text-2xl">{platform.icon}</span>
@@ -106,14 +107,14 @@ Because sometimes, the most powerful things… are the ones we were told don’t
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-indigo-900 mb-6">Latest Episodes</h2>
+            <h2 className="text-4xl font-bold text-indigo-900 mb-6">{t('podcast.latestEpisodes')}</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Discover our most recent conversations!
+              {t('podcast.discoverEpisodes')}
             </p>
           </div>
           
           <div className="overflow-x-auto pb-6">
-            <div className="flex space-x-6 min-w-max">
+            <div className="flex space-x-6 rtl:space-x-reverse min-w-max">
               {episodes.map((episode, index) => (
                 <div 
                   key={episode.id}
@@ -126,7 +127,7 @@ Because sometimes, the most powerful things… are the ones we were told don’t
                       alt={episode.title}
                       className="w-full h-48 object-cover"
                     />
-                    <div className="absolute bottom-4 right-4 bg-indigo-900 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                    <div className="absolute bottom-4 right-4 rtl:right-auto rtl:left-4 bg-indigo-900 text-white px-3 py-1 rounded-full text-sm font-semibold">
                       {episode.duration}
                     </div>
                   </div>
@@ -140,19 +141,19 @@ Because sometimes, the most powerful things… are the ones we were told don’t
                         href={episode.youtubeUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-red-600 text-white px-4 py-2 rounded-lg font-semibold text-center transition-all duration-300 hover:bg-red-700 flex items-center justify-center space-x-2"
+                        className="bg-red-600 text-white px-4 py-2 rounded-lg font-semibold text-center transition-all duration-300 hover:bg-red-700 flex items-center justify-center space-x-2 rtl:space-x-reverse"
                       >
                         <span>📺</span>
-                        <span>Watch on YouTube</span>
+                        <span>{t('podcast.watchYouTube')}</span>
                       </a>
                       <a
                         href={episode.spotifyUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-green-600 text-white px-4 py-2 rounded-lg font-semibold text-center transition-all duration-300 hover:bg-green-700 flex items-center justify-center space-x-2"
+                        className="bg-green-600 text-white px-4 py-2 rounded-lg font-semibold text-center transition-all duration-300 hover:bg-green-700 flex items-center justify-center space-x-2 rtl:space-x-reverse"
                       >
                         <span>🎵</span>
-                        <span>Listen on Spotify</span>
+                        <span>{t('podcast.listenSpotify')}</span>
                       </a>
                     </div>
                   </div>
@@ -166,11 +167,10 @@ Because sometimes, the most powerful things… are the ones we were told don’t
       {/* Subscribe CTA */}
       <section className="bg-indigo-900 text-white py-16">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-6">Never Miss an Episode</h2>
+          <h2 className="text-4xl font-bold mb-6">{t('podcast.neverMiss')}</h2>
           <p className="text-xl mb-8 opacity-90">
-            Subscribe to get notified when we release new episodes and exclusive behind-the-scenes content.
+            {t('podcast.neverMissDesc')}
           </p>
-         
         </div>
       </section>
 
@@ -178,10 +178,10 @@ Because sometimes, the most powerful things… are the ones we were told don’t
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
         <Link
           to="/activities"
-          className="inline-flex items-center space-x-2 bg-indigo-900 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-gold hover:text-indigo-900"
+          className="inline-flex items-center space-x-2 rtl:space-x-reverse bg-indigo-900 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-gold hover:text-indigo-900"
         >
-          <ArrowLeft size={20} />
-          <span>Back to Activities</span>
+          <ArrowLeft size={20} className="rtl:rotate-180" />
+          <span>{t('podcast.backToActivities')}</span>
         </Link>
       </div>
     </div>

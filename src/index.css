@@ -12,4 +12,45 @@
   ::selection {
     @apply bg-gold text-indigo-900;
   }
+  html[dir='rtl'] body {
+    @apply font-arabic;
+  }
+  html[dir='rtl'] [class*='font-display'] {
+    @apply font-arabic;
+  }
+  html[dir='rtl'] .space-x-0 > :not([hidden]) ~ :not([hidden]),
+  html[dir='rtl'] .space-x-1 > :not([hidden]) ~ :not([hidden]),
+  html[dir='rtl'] .space-x-1\.5 > :not([hidden]) ~ :not([hidden]),
+  html[dir='rtl'] .space-x-2 > :not([hidden]) ~ :not([hidden]),
+  html[dir='rtl'] .space-x-3 > :not([hidden]) ~ :not([hidden]),
+  html[dir='rtl'] .space-x-4 > :not([hidden]) ~ :not([hidden]),
+  html[dir='rtl'] .space-x-6 > :not([hidden]) ~ :not([hidden]),
+  html[dir='rtl'] .space-x-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 1;
+  }
+  html[dir='rtl'] .ml-auto {
+    margin-right: auto;
+    margin-left: 0;
+  }
+  html[dir='rtl'] .mr-1 {
+    margin-left: 0.25rem;
+    margin-right: 0;
+  }
+  html[dir='rtl'] .mr-2 {
+    margin-left: 0.5rem;
+    margin-right: 0;
+  }
+}
+
+@keyframes marqueeRTL {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+html[dir='rtl'] .animate-marquee {
+  animation: marqueeRTL 45s linear infinite;
 }

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import {
   ArrowRight,
   Star,
@@ -63,23 +64,53 @@ const Counter = ({ target, suffix = '', duration = 2000 }: CounterProps) => {
   );
 };
 
-const marqueePhotos = [
-  { src: '/src/pic/1.jpg', caption: 'Community in action' },
-  { src: '/src/pic/89.jpg', caption: 'Youth-led sessions' },
-  { src: '/src/pic/112.jpg', caption: 'Creative workshops' },
-  { src: '/src/pic/122.jpg', caption: 'Moments that matter' },
-  { src: '/src/pic/132.jpg', caption: 'Makers & dreamers' },
-  { src: '/src/pic/8962.jpg', caption: 'The Bȝ Arts spirit' },
-];
-
-const pillars = [
-  { icon: Mic, label: 'Podcast' },
-  { icon: Sparkles, label: 'Workshops' },
-  { icon: Share2, label: 'Social Media' },
-  { icon: BookOpen, label: 'Website & Magazine' },
-];
-
 const Home = () => {
+  const { t, i18n } = useTranslation();
+  const isArabic = i18n.language?.startsWith('ar');
+
+  const marqueePhotos = [
+    { src: '/images/workshops/mun-1.webp', caption: t('home.marquee1') },
+    { src: '/images/workshops/mun-2.webp', caption: t('home.marquee2') },
+    { src: '/images/workshops/mun-3.webp', caption: t('home.marquee3') },
+    { src: '/images/workshops/mun-4.webp', caption: t('home.marquee4') },
+    { src: '/images/workshops/mun-5.webp', caption: t('home.marquee5') },
+    { src: '/images/workshops/mun-cover.webp', caption: t('home.marquee6') },
+  ];
+
+  const pillars = [
+    { icon: Mic, label: t('home.pillarPodcast') },
+    { icon: Sparkles, label: t('home.pillarWorkshops') },
+    { icon: Share2, label: t('home.pillarSocial') },
+    { icon: BookOpen, label: t('home.pillarMagazine') },
+  ];
+
+  const identityCards = [
+    {
+      icon: Star,
+      image: '/images/icons/ba.webp',
+      title: t('home.baTitle'),
+      description: t('home.baDesc'),
+    },
+    {
+      icon: Users,
+      image: '/images/icons/sema.webp',
+      title: t('home.semaTitle'),
+      description: t('home.semaDesc'),
+    },
+    {
+      icon: Zap,
+      image: '/images/icons/sesen.webp',
+      title: t('home.sesenTitle'),
+      description: t('home.sesenDesc'),
+    },
+  ];
+
+  const aboutChecks = [
+    t('home.aboutCheck1'),
+    t('home.aboutCheck2'),
+    t('home.aboutCheck3'),
+  ];
+
   return (
     <div className="animate-fade-in overflow-x-clip">
       {/* ===== HERO ===== */}
@@ -90,30 +121,26 @@ const Home = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="animate-slide-up">
-              <span className="inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-gold/40 text-gold px-4 py-2 rounded-full text-sm font-semibold tracking-wide mb-6">
-                <Sparkles size={15} />
-                Youth-Led Creative Community
-              </span>
               <h1 className="font-display text-5xl md:text-6xl xl:text-7xl font-bold leading-[1.05] mb-6">
-                Where ancient creativity meets today’s
-                <span className="text-gold italic"> youth.</span>
+                {t('home.heroTitle1')}
+                <span className={`text-gold ${isArabic ? 'font-script' : 'italic'}`}> {t('home.heroTitle2')}</span>
               </h1>
               <p className="text-lg md:text-xl max-w-xl leading-relaxed opacity-90 mb-10">
-                From the spirit of Ancient Egypt to the voices of today, Bȝ Arts brings young creatives together — to learn, connect, and shape the future with imagination.
+                {t('home.heroDesc')}
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
                   to="/activities"
-                  className="inline-flex items-center space-x-2 bg-gold text-indigo-900 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:bg-yellow-400 hover:scale-105 shadow-xl shadow-gold/20"
+                  className="inline-flex items-center space-x-2 rtl:space-x-reverse bg-gold text-indigo-900 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:bg-yellow-400 hover:scale-105 shadow-xl shadow-gold/20"
                 >
-                  <span>Explore Activities</span>
-                  <ArrowRight size={20} />
+                  <span>{t('home.exploreActivities')}</span>
+                  <ArrowRight size={20} className="rtl:rotate-180" />
                 </Link>
                 <Link
                   to="/about"
-                  className="inline-flex items-center space-x-2 border-2 border-white/30 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-white hover:text-indigo-900 hover:border-white"
+                  className="inline-flex items-center space-x-2 rtl:space-x-reverse border-2 border-white/30 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-white hover:text-indigo-900 hover:border-white"
                 >
-                  <span>Our Story</span>
+                  <span>{t('home.ourStory')}</span>
                 </Link>
               </div>
             </div>
@@ -122,24 +149,24 @@ const Home = () => {
             <div className="relative hidden lg:block animate-slide-up" style={{ animationDelay: '0.2s' }}>
               <div className="relative rotate-2 rounded-[2rem] overflow-hidden shadow-2xl shadow-indigo-950/50 transition-transform duration-500 hover:rotate-0 hover:scale-[1.02]">
                 <img
-                  src="/src/pic/89.jpg"
+                  src="/images/workshops/mun-cover.webp"
                   alt="Bȝ Arts community"
                   className="w-full h-[480px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-indigo-950/60 to-transparent" />
               </div>
 
-              <div className="absolute -top-6 -left-8 -rotate-3 bg-white text-indigo-900 rounded-2xl shadow-xl px-6 py-4 animate-float">
-                <div className="font-display text-3xl font-bold">2000+</div>
-                <div className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Participants</div>
+              <div className="absolute -top-6 -right-8 rotate-3 bg-white text-indigo-900 rounded-2xl shadow-xl px-4 py-3 w-[8.5rem] text-center animate-float">
+                <div className="font-display text-2xl font-bold leading-none">2000+</div>
+                <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mt-1">{t('home.participants')}</div>
               </div>
 
-              <div className="absolute -bottom-6 -right-4 rotate-2 bg-gold text-indigo-900 rounded-2xl shadow-xl px-6 py-4 animate-float-slow">
-                <div className="flex items-center gap-2 font-bold">
-                  <span className="text-3xl">✦</span>
-                  <span className="text-lg">Lotus-born</span>
+              <div className="absolute -bottom-6 -left-4 -rotate-2 bg-gold text-indigo-900 rounded-2xl shadow-xl px-4 py-3 w-[9.5rem] text-center animate-float-slow">
+                <div className="flex items-center justify-center gap-1.5 font-bold">
+                  <span className="text-xl">✦</span>
+                  <span className="text-sm leading-tight">{t('home.lotusBorn')}</span>
                 </div>
-                <div className="text-sm font-semibold opacity-80">Ancient soul · modern voice</div>
+                <div className="text-xs font-semibold opacity-80 mt-1">{t('home.ancientSoul')}</div>
               </div>
             </div>
           </div>
@@ -175,13 +202,13 @@ const Home = () => {
       <section className="py-20 md:py-24 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-flex items-center gap-2 text-gold font-bold uppercase tracking-[0.2em] text-sm mb-4">
-            <span className="h-px w-8 bg-gold" /> Our Impact <span className="h-px w-8 bg-gold" />
+            <span className="h-px w-8 bg-gold" /> {t('home.impactLabel')} <span className="h-px w-8 bg-gold" />
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-indigo-900 mb-4">
-            Our Impact in Numbers
+            {t('home.impactTitle')}
           </h2>
           <p className="text-lg text-gray-500 max-w-2xl mx-auto mb-16">
-            A growing community of young creatives reshaping the future of art and innovation across the MENA region.
+            {t('home.impactDesc')}
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
@@ -189,19 +216,19 @@ const Home = () => {
               <div className="text-5xl md:text-6xl font-extrabold text-indigo-900">
                 <Counter target={2000} suffix="+" />
               </div>
-              <p className="mt-3 text-gray-500 uppercase tracking-wider font-semibold text-sm">Participants</p>
+              <p className="mt-3 text-gray-500 uppercase tracking-wider font-semibold text-sm">{t('home.statParticipants')}</p>
             </div>
             <div className="relative bg-white rounded-3xl p-10 shadow-sm hover:shadow-xl transition-shadow duration-300 border-t-4 border-gold animate-slide-up" style={{ animationDelay: '0.15s' }}>
               <div className="text-5xl md:text-6xl font-extrabold text-indigo-900">
                 <Counter target={3} />
               </div>
-              <p className="mt-3 text-gray-500 uppercase tracking-wider font-semibold text-sm">Core Symbols</p>
+              <p className="mt-3 text-gray-500 uppercase tracking-wider font-semibold text-sm">{t('home.statSymbols')}</p>
             </div>
             <div className="relative bg-white rounded-3xl p-10 shadow-sm hover:shadow-xl transition-shadow duration-300 border-t-4 border-gold animate-slide-up" style={{ animationDelay: '0.3s' }}>
               <div className="text-5xl md:text-6xl font-extrabold text-indigo-900">
                 <Counter target={4} />
               </div>
-              <p className="mt-3 text-gray-500 uppercase tracking-wider font-semibold text-sm">Activity Pillars</p>
+              <p className="mt-3 text-gray-500 uppercase tracking-wider font-semibold text-sm">{t('home.statPillars')}</p>
             </div>
           </div>
         </div>
@@ -217,45 +244,41 @@ const Home = () => {
             >
               <div className="relative -rotate-1 rounded-[2rem] overflow-hidden shadow-2xl transition-transform duration-500 group-hover:rotate-0 group-hover:scale-[1.02]">
                 <img
-                  src="/src/pic/122.jpg"
+                  src="/images/workshops/mun-1.webp"
                   alt="The Bȝ Arts community"
                   className="w-full h-[440px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-indigo-950/70 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between px-8 py-7">
                   <div>
-                    <div className="font-display text-white text-2xl font-bold">Who We Are</div>
-                    <div className="text-white/80 text-sm">Our story, mission & team</div>
+                    <div className="font-display text-white text-2xl font-bold">{t('home.whoWeAre')}</div>
+                    <div className="text-white/80 text-sm">{t('home.whoWeAreSub')}</div>
                   </div>
-                  <span className="inline-flex items-center space-x-2 bg-gold text-indigo-900 px-6 py-3 rounded-full font-bold transition-all duration-300 group-hover:bg-yellow-400">
-                    <span>Discover</span>
-                    <ArrowRight size={18} />
+                  <span className="inline-flex items-center space-x-2 rtl:space-x-reverse bg-gold text-indigo-900 px-6 py-3 rounded-full font-bold transition-all duration-300 group-hover:bg-yellow-400">
+                    <span>{t('home.discover')}</span>
+                    <ArrowRight size={18} className="rtl:rotate-180" />
                   </span>
                 </div>
               </div>
-              <div className="absolute -top-5 -right-3 bg-indigo-900 text-white rounded-2xl shadow-xl px-6 py-4 animate-float-slow">
-                <div className="font-display text-2xl font-bold text-gold">100%</div>
-                <div className="text-xs font-semibold uppercase tracking-wide opacity-90">Youth-led</div>
+              <div className="absolute -top-5 -right-3 bg-indigo-900 text-white rounded-2xl shadow-xl px-4 py-3 w-[8.5rem] text-center animate-float-slow">
+                <div className="font-display text-2xl font-bold text-gold leading-none">100%</div>
+                <div className="text-xs font-semibold uppercase tracking-wide opacity-90 mt-1">{t('home.youthLed')}</div>
               </div>
             </Link>
 
             <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
               <span className="inline-flex items-center gap-2 text-gold font-bold uppercase tracking-[0.2em] text-sm mb-4">
-                <Info size={16} /> About Us
+                <Info size={16} /> {t('home.aboutBadge')}
               </span>
               <h2 className="font-display text-4xl md:text-5xl font-bold text-indigo-900 mb-6 leading-tight">
-                A creative home built for the voices of tomorrow.
+                {t('home.aboutTitle')}
               </h2>
               <p className="text-lg text-gray-500 leading-relaxed mb-8">
-                Inspired by the timeless spirit of Ancient Egypt, we empower high school students in Egypt and the MENA region to explore their artistic voices — bringing together individuality (Ba), growth & community (Sesen), and integration (Sema).
+                {t('home.aboutDesc')}
               </p>
               <ul className="space-y-4 mb-10">
-                {[
-                  'Youth founders & mentors from across the region',
-                  'Programs that blend art, science & society',
-                  'A safe space to create, share and grow',
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3">
+                {aboutChecks.map((item) => (
+                  <li key={item} className="flex items-start gap-3 rtl:gap-3">
                     <span className="mt-1 w-5 h-5 rounded-full bg-gold/20 text-gold flex items-center justify-center flex-shrink-0">
                       <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                     </span>
@@ -265,10 +288,10 @@ const Home = () => {
               </ul>
               <Link
                 to="/about"
-                className="group inline-flex items-center space-x-3 bg-indigo-900 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:bg-gold hover:text-indigo-900 hover:scale-105 shadow-lg"
+                className="group inline-flex items-center space-x-3 rtl:space-x-reverse bg-indigo-900 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:bg-gold hover:text-indigo-900 hover:scale-105 shadow-lg"
               >
-                <span>Discover Our Story</span>
-                <ArrowRight size={20} className="transform group-hover:translate-x-1 transition-transform duration-300" />
+                <span>{t('home.discoverOurStory')}</span>
+                <ArrowRight size={20} className="transform rtl:rotate-180 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform duration-300" />
               </Link>
             </div>
           </div>
@@ -280,37 +303,18 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-flex items-center gap-2 text-gold font-bold uppercase tracking-[0.2em] text-sm mb-4">
-              <span className="h-px w-8 bg-gold" /> Our Identity <span className="h-px w-8 bg-gold" />
+              <span className="h-px w-8 bg-gold" /> {t('home.identityBadge')} <span className="h-px w-8 bg-gold" />
             </span>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-indigo-900 mb-4">
-              Three symbols. One community.
+              {t('home.identityTitle')}
             </h2>
             <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-              Inspired by Ancient Egypt, our identity is built on three powerful symbols that define who we are.
+              {t('home.identityDesc')}
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: Star,
-                image: '/src/pic/10.png',
-                title: 'The Ba (Bȝ)',
-                description: 'A bird with a human head — the soul and uniqueness of every person. For us: Unique Opportunity. Every student has a distinct creative voice that deserves to be heard.',
-              },
-              {
-                icon: Users,
-                image: '/src/pic/8.png',
-                title: 'The Sema',
-                description: 'The ancient symbol of unity of the two lands. For us: Integration. Where arts connect with science, technology, and society to spark innovation.',
-              },
-              {
-                icon: Zap,
-                image: '/src/pic/9.png',
-                title: 'The Sesen',
-                description: 'The lotus of beauty, rebirth and inspiration. For us: creative individuality and community — talents flourishing side by side like opening blossoms.',
-              },
-            ].map(({ image, title, description }, index) => (
+            {identityCards.map(({ image, title, description }, index) => (
               <div
                 key={title}
                 className="group relative bg-white rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-500 hover:scale-105 animate-slide-up overflow-hidden"
@@ -334,13 +338,13 @@ const Home = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="animate-slide-up">
               <span className="inline-flex items-center gap-2 text-gold font-bold uppercase tracking-[0.2em] text-sm mb-4">
-                <Activity size={16} /> Join Us
+                <Activity size={16} /> {t('home.joinBadge')}
               </span>
               <h2 className="font-display text-4xl md:text-5xl font-bold text-indigo-900 mb-6 leading-tight">
-                Find your place in the creative circle.
+                {t('home.joinTitle')}
               </h2>
               <p className="text-lg text-gray-500 leading-relaxed mb-10">
-                From podcasts to workshops, social media and our magazine — there are endless ways to learn, create, and grow with a community that values your voice.
+                {t('home.joinDesc')}
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
                 {pillars.map(({ icon: Icon, label }) => (
@@ -351,35 +355,35 @@ const Home = () => {
                   >
                     <Icon size={20} className="text-gold group-hover:text-gold" />
                     <span className="font-semibold text-indigo-900 group-hover:text-white">{label}</span>
-                    <ArrowRight size={16} className="ml-auto text-gray-400 group-hover:text-gold group-hover:translate-x-1 transition-all duration-300" />
+                    <ArrowRight size={16} className="rtl:rotate-180 ml-auto text-gray-400 group-hover:text-gold group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-all duration-300" />
                   </Link>
                 ))}
               </div>
               <Link
                 to="/activities"
-                className="group inline-flex items-center space-x-3 bg-gold text-indigo-900 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:bg-yellow-400 hover:scale-105 shadow-lg"
+                className="group inline-flex items-center space-x-3 rtl:space-x-reverse bg-gold text-indigo-900 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:bg-yellow-400 hover:scale-105 shadow-lg"
               >
-                <span>Explore All Activities</span>
-                <ArrowRight size={20} className="transform group-hover:translate-x-1 transition-transform duration-300" />
+                <span>{t('home.exploreAll')}</span>
+                <ArrowRight size={20} className="transform rtl:rotate-180 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform duration-300" />
               </Link>
             </div>
 
             <Link to="/activities" className="group relative block animate-slide-up" style={{ animationDelay: '0.2s' }}>
               <div className="relative rotate-1 rounded-[2rem] overflow-hidden shadow-2xl transition-transform duration-500 group-hover:rotate-0 group-hover:scale-[1.02]">
                 <img
-                  src="/src/pic/1.jpg"
+                  src="/images/workshops/mun-2.webp"
                   alt="Join our activities"
                   className="w-full h-[440px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-indigo-950/70 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between px-8 py-7">
                   <div>
-                    <div className="font-display text-white text-2xl font-bold">Get Involved</div>
-                    <div className="text-white/80 text-sm">Podcasts · Workshops · Community</div>
+                    <div className="font-display text-white text-2xl font-bold">{t('home.getInvolved')}</div>
+                    <div className="text-white/80 text-sm">{t('home.getInvolvedSub')}</div>
                   </div>
-                  <span className="inline-flex items-center space-x-2 bg-gold text-indigo-900 px-6 py-3 rounded-full font-bold transition-all duration-300 group-hover:bg-yellow-400">
-                    <span>Join Us</span>
-                    <ArrowRight size={18} />
+                  <span className="inline-flex items-center space-x-2 rtl:space-x-reverse bg-gold text-indigo-900 px-6 py-3 rounded-full font-bold transition-all duration-300 group-hover:bg-yellow-400">
+                    <span>{t('home.joinUs')}</span>
+                    <ArrowRight size={18} className="rtl:rotate-180" />
                   </span>
                 </div>
               </div>
@@ -395,27 +399,27 @@ const Home = () => {
             <div className="grid lg:grid-cols-2">
               <div className="relative h-64 lg:h-[440px]">
                 <img
-                  src="/src/pic/132.jpg"
+                  src="/images/workshops/mun-5.webp"
                   alt="Shop our collection"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-indigo-950/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-r from-indigo-950/30 to-transparent rtl:bg-gradient-to-l" />
               </div>
               <div className="relative bg-indigo-950 text-white p-10 lg:p-16 flex flex-col justify-center">
-                <div className="absolute -top-12 -right-12 w-48 h-48 bg-gold/10 rounded-full blur-2xl animate-float-slow" />
+                <div className="absolute -top-12 -right-12 rtl:-right-auto rtl:-left-12 w-48 h-48 bg-gold/10 rounded-full blur-2xl animate-float-slow" />
                 <span className="inline-flex items-center gap-2 text-gold font-bold uppercase tracking-[0.2em] text-sm mb-4">
-                  <ShoppingBag size={16} /> Shop Now
+                  <ShoppingBag size={16} /> {t('home.shopBadge')}
                 </span>
                 <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                  Take a piece of the community home.
+                  {t('home.shopTitle')}
                 </h2>
                 <p className="text-lg text-white/80 leading-relaxed mb-10">
-                  Discover our curated collection of premium products created from youth to youth — supporting young creatives with every purchase.
+                  {t('home.shopDesc')}
                 </p>
                 <div className="inline-flex">
-                  <span className="inline-flex items-center space-x-2 bg-gold text-indigo-900 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 group-hover:bg-yellow-400 group-hover:scale-105">
-                    <span>Browse the Shop</span>
-                    <ArrowRight size={20} />
+                  <span className="inline-flex items-center space-x-2 rtl:space-x-reverse bg-gold text-indigo-900 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 group-hover:bg-yellow-400 group-hover:scale-105">
+                    <span>{t('home.browseShop')}</span>
+                    <ArrowRight size={20} className="rtl:rotate-180" />
                   </span>
                 </div>
               </div>
@@ -431,30 +435,26 @@ const Home = () => {
         <div className="absolute -bottom-20 -right-20 w-72 h-72 bg-indigo-400/10 rounded-full blur-3xl animate-float-slow" />
 
         <div className="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <span className="inline-block text-gold font-bold uppercase tracking-[0.2em] text-sm mb-4">Ready to start?</span>
+          <span className="inline-block text-gold font-bold uppercase tracking-[0.2em] text-sm mb-4">{t('home.readyToStart')}</span>
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            Your creative journey starts here.
+            {t('home.ctaTitle')}
           </h2>
           <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto">
-            Join our growing community and unlock your potential through programs, mentorship, and recognition.
+            {t('home.ctaDesc')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://forms.gle/wRp1EBjwRZnLUeoDA"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/registration"
               className="bg-gold text-indigo-900 px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:bg-yellow-400 hover:scale-105 shadow-xl shadow-gold/20"
             >
-              Register Now
-            </a>
-            <a
-              href="https://linktr.ee/b3arts"
-              target="_blank"
-              rel="noopener noreferrer"
+              {t('home.registerNow')}
+            </Link>
+            <Link
+              to="/contact"
               className="border-2 border-white/30 px-10 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-white hover:text-indigo-900"
             >
-              Contact Us
-            </a>
+              {t('home.contactUs')}
+            </Link>
           </div>
         </div>
       </section>
