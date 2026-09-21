@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Target, Heart, Linkedin } from 'lucide-react';
+import { Target, Heart, Linkedin, Mail } from 'lucide-react';
 
 const About = () => {
   const { t } = useTranslation();
@@ -11,11 +11,14 @@ const About = () => {
       role: t('about.roleFounder'),
       photo: '/images/team/sama.webp',
       linkedin: 'https://www.linkedin.com/in/sama-h-0218362b3/',
+      email: 'samahassan450@gmail.com',
     },
     {
       name: 'Menna Ismail',
       role: t('about.roleCOO'),
       photo: '/images/team/menna.webp',
+      linkedin: 'https://www.linkedin.com/in/mennaelsadek',
+      email: 'mennaismaillsabryy@gmail.com',
     },
   ];
 
@@ -151,10 +154,21 @@ const About = () => {
                     href={member.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center space-x-2 rtl:space-x-reverse text-indigo-900 hover:text-gold transition-colors duration-300 font-medium"
+                    className="flex items-center justify-center space-x-2 rtl:space-x-reverse text-indigo-900 hover:text-gold transition-colors duration-300 font-medium"
                   >
                     <Linkedin size={18} />
-                    <span>{t('about.connectLinkedIn')}</span>
+                    <span>
+                      LinkedIn — {member.name}
+                    </span>
+                  </a>
+                )}
+                {member.email && (
+                  <a
+                    href={`mailto:${member.email}`}
+                    className="flex items-center justify-center space-x-2 rtl:space-x-reverse text-indigo-900 hover:text-gold transition-colors duration-300 font-medium mt-2"
+                  >
+                    <Mail size={18} />
+                    <span>{member.email}</span>
                   </a>
                 )}
               </div>

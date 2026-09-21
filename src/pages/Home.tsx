@@ -171,12 +171,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-
-        <div className="absolute bottom-0 left-0 right-0">
-          <svg viewBox="0 0 1200 120" fill="none" className="w-full h-16">
-            <path d="M0 120L50 105C100 90 200 60 300 45C400 30 500 30 600 37.5C700 45 800 60 900 67.5C1000 75 1100 75 1150 75L1200 75V120H1150C1100 120 1000 120 900 120C800 120 700 120 600 120C500 120 400 120 300 120C200 120 100 120 50 120H0Z" fill="#faf7f0"/>
-          </svg>
-        </div>
       </section>
 
       {/* ===== PHOTO MARQUEE ===== */}
